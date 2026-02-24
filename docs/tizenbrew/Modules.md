@@ -89,7 +89,7 @@ TizenBrew navigates to the target URL and evaluates the module's `main` script o
 | TizenTube | `mods` | [reisxd/TizenTube](https://github.com/reisxd/TizenTube) |
 | TizenPortal | `mods` | [axelnanol/tizenportal](https://github.com/axelnanol/tizenportal) |
 | Jellyfin-Tizen | `app` | [GlenLowland/jellyfin-tizen-npm-publish](https://github.com/GlenLowland/jellyfin-tizen-npm-publish) |
-| BrewDocs | `app` | [axelnanol/brewdocs](https://github.com/axelnanol/brewdocs) |
+| BrewDocs | `mods` | [axelnanol/brewdocs](https://github.com/axelnanol/brewdocs) |
 
 ---
 

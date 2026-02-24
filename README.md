@@ -52,7 +52,7 @@ directly on your Samsung TV to browse the documentation from your couch.
 
 ---
 
-BrewDocs is packaged as a TizenBrew **app** module. Add it to TizenBrew with:
+BrewDocs is packaged as a TizenBrew **mods** module. Add it to TizenBrew with:
 
 ```
 axelnanol/brewdocs
