@@ -825,7 +825,22 @@
       var dir = DIRS[keyCode];
       if (!dir) return null;
 
-      var candidates = getFocusableElements();
+      // For vertical movement, restrict candidates to the same panel so that
+      // UP/DOWN navigation never crosses from the content panel to the sidebar
+      // (or vice-versa).  Horizontal movement (LEFT/RIGHT) keeps the global
+      // search so that switching panels with ← → still works.
+      var searchRoot = null;
+      if (dir.y !== 0) {
+        var contentEl = document.getElementById('bd-content');
+        var sidebarEl = document.getElementById('bd-sidebar');
+        if (contentEl && contentEl.contains(currentEl)) {
+          searchRoot = contentEl;
+        } else if (sidebarEl && sidebarEl.contains(currentEl)) {
+          searchRoot = sidebarEl;
+        }
+      }
+
+      var candidates = getFocusableElements(searchRoot);
       var fromRect = currentEl.getBoundingClientRect();
 
       var best = null;
@@ -867,6 +882,17 @@
           e.preventDefault();
           next.focus();
           next.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+        } else if (code === 40 || code === 38) {
+          // No focusable element found in this direction within the panel.
+          // If we are in the content panel, scroll it so the user can reach
+          // content that has no focusable elements, or reveal links that are
+          // just outside the visible area.
+          var contentPane = document.getElementById('bd-content');
+          if (contentPane && contentPane.contains(focused)) {
+            e.preventDefault();
+            var delta = contentPane.clientHeight * 0.8;
+            contentPane.scrollBy({ top: code === 40 ? delta : -delta, behavior: 'smooth' });
+          }
         }
       });
 
