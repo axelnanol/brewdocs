@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BrewDocs — TizenBrew Wiki</title>
+  <style>
+    /* ── Reset & Base ───────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #0d1117;
+      --surface:   #161b22;
+      --border:    #30363d;
+      --accent:    #58a6ff;
+      --accent-dk: #1f6feb;
+      --text:      #e6edf3;
+      --text-muted:#8b949e;
+      --nav-w:     340px;
+      --focus-clr: #f78166;
+    }
+
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 28px;           /* large for TV viewing distance */
+      line-height: 1.6;
+      overflow: hidden;
+    }
+
+    /* ── Layout ─────────────────────────────────────────────── */
+    #bd-shell {
+      display: flex;
+      height: 100vh;
+    }
+
+    /* ── Sidebar ────────────────────────────────────────────── */
+    #bd-sidebar {
+      width: var(--nav-w);
+      min-width: var(--nav-w);
+      background: var(--surface);
+      border-right: 2px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    #bd-logo {
+      padding: 24px 20px 16px;
+      border-bottom: 2px solid var(--border);
+      color: var(--accent);
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      flex-shrink: 0;
+    }
+
+    #bd-logo span {
+      color: var(--text-muted);
+      font-size: 20px;
+      font-weight: 400;
+      display: block;
+      margin-top: 2px;
+    }
+
+    #bd-nav {
+      flex: 1;
+      overflow-y: auto;
+      padding: 12px 0 20px;
+      scrollbar-width: thin;
+      scrollbar-color: var(--border) transparent;
+    }
+
+    .nav-section {
+      margin-bottom: 8px;
+    }
+
+    .nav-section-title {
+      display: block;
+      padding: 10px 20px 4px;
+      color: var(--text-muted);
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .nav-link {
+      display: block;
+      padding: 12px 20px 12px 28px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 26px;
+      border-left: 3px solid transparent;
+      transition: background 0.1s, border-color 0.1s;
+      cursor: pointer;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+      background: rgba(88, 166, 255, 0.1);
+      border-left-color: var(--accent);
+      outline: none;
+    }
+
+    .nav-link.active {
+      background: rgba(88, 166, 255, 0.18);
+      border-left-color: var(--accent);
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* ── Content Area ────────────────────────────────────────── */
+    #bd-content-wrap {
+      flex: 1;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #bd-topbar {
+      padding: 14px 32px;
+      background: var(--surface);
+      border-bottom: 2px solid var(--border);
+      color: var(--text-muted);
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+
+    #bd-content {
+      flex: 1;
+      overflow-y: auto;
+      padding: 40px 52px 60px;
+      scrollbar-width: thin;
+      scrollbar-color: var(--border) transparent;
+    }
+
+    /* ── Typography ─────────────────────────────────────────── */
+    #bd-content h1 {
+      font-size: 48px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    #bd-content h2 {
+      font-size: 36px;
+      font-weight: 600;
+      color: var(--text);
+      margin: 36px 0 14px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    #bd-content h3 {
+      font-size: 30px;
+      font-weight: 600;
+      color: var(--text);
+      margin: 28px 0 10px;
+    }
+
+    #bd-content p {
+      margin-bottom: 18px;
+      color: var(--text);
+    }
+
+    #bd-content ul, #bd-content ol {
+      margin: 0 0 18px 36px;
+    }
+
+    #bd-content li {
+      margin-bottom: 8px;
+    }
+
+    #bd-content a.ext-link {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    #bd-content a.ext-link:focus,
+    #bd-content a.ext-link:hover {
+      color: #fff;
+      outline: 3px solid var(--focus-clr);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
+    #bd-content code {
+      background: #1c2128;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2px 8px;
+      font-family: 'Courier New', monospace;
+      font-size: 24px;
+      color: #e3b341;
+    }
+
+    #bd-content pre {
+      background: #1c2128;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px 24px;
+      overflow-x: auto;
+      margin-bottom: 20px;
+    }
+
+    #bd-content pre code {
+      background: none;
+      border: none;
+      padding: 0;
+      font-size: 22px;
+      color: #e3b341;
+      white-space: pre;
+    }
+
+    #bd-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      font-size: 26px;
+    }
+
+    #bd-content th {
+      background: var(--surface);
+      color: var(--accent);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+    }
+
+    #bd-content td {
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    #bd-content tr:nth-child(even) td {
+      background: rgba(255,255,255,0.03);
+    }
+
+    kbd {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2px 8px;
+      font-size: 22px;
+      font-family: inherit;
+    }
+
+    /* ── Focus ring — TV-optimised ────────────────────────────── */
+    :focus {
+      outline: 3px solid var(--focus-clr);
+      outline-offset: 2px;
+    }
+
+    /* ── Hint bar ────────────────────────────────────────────── */
+    #bd-hints {
+      padding: 10px 32px;
+      background: var(--surface);
+      border-top: 2px solid var(--border);
+      color: var(--text-muted);
+      font-size: 20px;
+      display: flex;
+      gap: 32px;
+      flex-shrink: 0;
+    }
+
+    #bd-hints span { white-space: nowrap; }
+  </style>
+</head>
+<body>
+  <div id="bd-shell">
+    <!-- Sidebar -->
+    <aside id="bd-sidebar">
+      <div id="bd-logo">
+        📺 BrewDocs
+        <span>TizenBrew Wiki</span>
+      </div>
+      <nav id="bd-nav" aria-label="Documentation pages"></nav>
+    </aside>
+
+    <!-- Content -->
+    <div id="bd-content-wrap">
+      <div id="bd-topbar">
+        Use the D-pad to navigate · <kbd>Enter</kbd> to select
+      </div>
+      <main id="bd-content" tabindex="-1" role="main">
+        <!-- Filled by brewdocs.js -->
+      </main>
+      <div id="bd-hints">
+        <span>⬆⬇ — scroll sidebar</span>
+        <span>⬅➡ — switch panel</span>
+        <span>🔵 Blue — back to top</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="brewdocs.js"></script>
+</body>
+</html>
