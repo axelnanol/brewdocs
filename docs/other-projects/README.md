@@ -39,6 +39,25 @@ for exact contents of each bundle.
 
 ---
 
+## Independent Projects
+
+### μTube (MuTube)
+
+> **Source:** <https://github.com/Exaphis/mutube>  
+> **Author:** Exaphis  
+> **Platform:** Apple TV (tvOS) — not a TizenBrew module
+
+An unofficial port of the [TizenTube Cobalt](../tizentubecobalt/README.md)
+userscript to Apple TV. It patches the YouTube IPA to inject TizenTube Cobalt's
+ad-blocking and enhancement script, bringing ad blocking and SponsorBlock
+support to YouTube on tvOS.
+
+**Requirements:** `uv`, Xcode Command Line Tools, and a decrypted YouTube IPA.
+Build with `make`, then sideload `mutube.ipa` using
+[Sideloadly](https://sideloadly.io/).
+
+---
+
 ## Failed & Abandoned Projects
 
 ### Better xCloud TV (better-xcloud-tv)
