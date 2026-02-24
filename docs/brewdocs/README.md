@@ -1,6 +1,6 @@
 # BrewDocs — Overview
 
-**BrewDocs** is the official wiki for TizenBrew and its ecosystem. It is built
+**BrewDocs** is an unofficial wiki for TizenBrew and its ecosystem. It is built
 as a TizenBrew module so you can read the documentation directly on your
 Samsung TV without leaving the TizenBrew dashboard.
 

@@ -31,8 +31,7 @@ TizenBrew is the modular platform that makes all of these mods possible.
 ## Related & Other Projects
 
 - [TizenTube Cobalt](tizentubecobalt/README.md) — TizenTube for Android / Google TV (not a TizenBrew module)
-- [μTube](mutube/README.md) — Unofficial Apple TV port of TizenTube Cobalt (not a TizenBrew module)
-- [Tizen Community Packages & Other Projects](other-projects/README.md) — community bundles, failed projects
+- [Tizen Community Packages & Other Projects](other-projects/README.md) — community bundles, independent ports, failed projects
 
 ## BrewDocs
 
