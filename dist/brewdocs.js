@@ -934,6 +934,7 @@
   // 3. WIKI RENDERER
   // ─────────────────────────────────────────────────────────────
   var currentPageId = 'home';
+  var pageHistory = [];
 
   function buildSidebar() {
     var nav = document.getElementById('bd-nav');
@@ -978,13 +979,16 @@
     });
   }
 
-  function showPage(id) {
+  function showPage(id, addToHistory) {
     var page = null;
     for (var i = 0; i < pages.length; i++) {
       if (pages[i].id === id) { page = pages[i]; break; }
     }
     if (!page) return;
 
+    if (addToHistory !== false && currentPageId !== id) {
+      pageHistory.push(currentPageId);
+    }
     currentPageId = id;
 
     // Update active state in sidebar
@@ -1035,10 +1039,12 @@
           e.preventDefault();
           break;
 
-        case 10009: // Return/Back — go back to home page
+        case 10009: // Return/Back — go back in history
         case 8:     // Backspace (browser fallback)
-          if (currentPageId !== 'home') {
-            showPage('home');
+          if (pageHistory.length > 0) {
+            showPage(pageHistory.pop(), false);
+          } else if (currentPageId !== 'home') {
+            showPage('home', false);
           }
           e.preventDefault();
           break;
