@@ -14,11 +14,21 @@ TizenBrew is the modular platform that makes all of these mods possible.
 - [Module System](tizenbrew/Modules.md) — Installing modules and writing your own
 - [Building & Resigning](tizenbrew/Building.md) — Rebuilding and resigning the app package
 
-## TizenTube
+## TizenBrew Mods
 
-- [Overview](tizentube/README.md) — Ad-free, sponsor-free YouTube for Samsung TVs
+- [TizenTube](tizentube/README.md) — Ad-free, sponsor-free YouTube for Samsung TVs
+- [TizenPortal](tizenportal/README.md) — Universal browser shell for Tizen OS
+  - [Usage Guide](tizenportal/Usage.md) — Day-to-day usage and remote-control reference
+- [TizenBrowse](tizenbrowse/README.md) — Ad-free browsing mod for Samsung TVs
+- [TFlix](tflix/README.md) — Netflix-like mod for Cineby.gd on Samsung TVs
 
-## TizenPortal
+## Media & Apps
 
-- [Overview](tizenportal/README.md) — Universal browser shell for Tizen OS
-- [Usage Guide](tizenportal/Usage.md) — Day-to-day usage and remote-control reference
+- [Jellyfin on Tizen](jellyfin/README.md) — Free open-source media server (TizenBrew module + standalone installers)
+- [Moonlight on Tizen](moonlight/README.md) — NVIDIA GameStream / Sunshine client (Chrome/WASM for Tizen 5.5+, NaCl for older TVs)
+
+## Related & Other Projects
+
+- [TizenTube Cobalt](tizentubecobalt/README.md) — TizenTube for Android / Google TV (not a TizenBrew module)
+- [Tizen Community Packages & Other Projects](other-projects/README.md) — community bundles, failed projects
+

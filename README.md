@@ -18,18 +18,29 @@ directly on your Samsung TV to browse the documentation from your couch.
 | [Module System](docs/tizenbrew/Modules.md) | How to install and create TizenBrew modules |
 | [Building & Resigning](docs/tizenbrew/Building.md) | Rebuilding and resigning the TizenBrew package |
 
-### TizenTube
+### TizenBrew Mods
 
 | Page | Description |
 | :--- | :---------- |
-| [Overview](docs/tizentube/README.md) | Ad-free YouTube for Samsung TVs |
+| [TizenTube](docs/tizentube/README.md) | Ad-free, sponsor-free YouTube for Samsung TVs |
+| [TizenPortal](docs/tizenportal/README.md) | Universal browser shell for Tizen OS |
+| [TizenPortal Usage](docs/tizenportal/Usage.md) | Day-to-day usage and remote-control reference |
+| [TizenBrowse](docs/tizenbrowse/README.md) | Ad-free browsing mod for Samsung TVs |
+| [TFlix](docs/tflix/README.md) | Netflix-like mod for Cineby.gd on Samsung TVs |
 
-### TizenPortal
+### Media & Apps
 
 | Page | Description |
 | :--- | :---------- |
-| [Overview](docs/tizenportal/README.md) | Universal browser shell for Tizen |
-| [Usage Guide](docs/tizenportal/Usage.md) | Using TizenPortal day-to-day |
+| [Jellyfin on Tizen](docs/jellyfin/README.md) | Free open-source media server |
+| [Moonlight on Tizen](docs/moonlight/README.md) | NVIDIA GameStream / Sunshine client |
+
+### Related & Other Projects
+
+| Page | Description |
+| :--- | :---------- |
+| [TizenTube Cobalt](docs/tizentubecobalt/README.md) | TizenTube for Android / Google TV |
+| [Tizen Community Packages & Other Projects](docs/other-projects/README.md) | Community bundles, failed projects |
 
 ---
 
@@ -50,7 +61,13 @@ D-pad / remote-control navigation powered by spatial navigation.
 
 - [TizenBrew](https://github.com/reisxd/TizenBrew)
 - [TizenTube](https://github.com/reisxd/TizenTube)
+- [TizenTube Cobalt](https://github.com/reisxd/TizenTubeCobalt)
 - [TizenPortal](https://github.com/axelnanol/tizenportal)
+- [TizenBrowse](https://github.com/ghostfxck/TizenBrowse)
+- [TFlix](https://github.com/Zyrecx/TFlix)
+- [Moonlight for Tizen](https://github.com/OneLiberty/moonlight-chrome-tizen)
+- [Jellyfin for TizenBrew](https://github.com/GlenLowland/jellyfin-tizen-npm-publish)
+- [Tizen Community Packages](https://github.com/PatrickSt1991/tizen-community-packages)
 - [TizenBrew Installer](https://github.com/reisxd/TizenBrewInstaller)
 
 ---
