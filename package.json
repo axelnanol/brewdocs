@@ -1,17 +1,19 @@
 {
   "name": "@axelnanol/brewdocs",
   "appName": "BrewDocs",
-  "version": "1.0.0",
+  "version": "0001",
   "description": "A comprehensive wiki for all things TizenBrew related",
-  "packageType": "app",
-  "appPath": "dist/brewdocs.html",
+  "type": "module",
+  "packageType": "mods",
+  "websiteURL": "https://axelnanol.github.io/brewdocs/dist/brewdocs.html?v=0001",
+  "main": "dist/brewdocs.js",
   "keys": [
     "ColorF0Red",
     "ColorF1Green",
     "ColorF2Yellow",
     "ColorF3Blue"
   ],
-  "author": "Alex Nolan",
+  "author": "Axel Nanol",
   "license": "MIT",
   "repository": {
     "type": "git",
