@@ -110,6 +110,49 @@ Samsung certificate matching the registered TV's DUID.
 
 ---
 
+## TizenBrew Autostart — TV Hangs / Cannot Get Back to Menu
+
+**Symptoms:** TizenBrew launches straight into TizenTube, the TV hangs or stutters,
+and pressing Back doesn't return to the TizenBrew dashboard.
+
+**Possible cause:** A memory leak or stale session accumulating over time, especially
+noticeable after upgrading from 2.x.
+
+**Steps:**
+
+1. **Reboot your TV** (long-press the power button or unplug from the wall). On
+   reboot TizenBrew usually pauses briefly on the home screen before autostarting.
+2. **Interrupt the autostart** — press **Back** immediately after TizenBrew appears,
+   before YouTube fully loads.
+3. Once on the TizenBrew home screen, go to **Settings** and disable **Autostart**.
+4. If you cannot interrupt the autostart at all, reinstall TizenBrew via the
+   TizenBrew Installer — this resets the configuration to defaults.
+
+---
+
+## TV Rebooting in a Loop While Using TizenTube Cobalt (NVIDIA Shield / Android)
+
+**Symptoms:** TV screen turns blue and enters a reboot loop while using TizenTube
+Cobalt on an attached device (e.g. NVIDIA Shield). Only unplugging the TV stops it.
+
+**Cause:** This is an **HDMI handshake / CEC (Consumer Electronics Control) issue**
+between the Shield and the TV — it is not caused by TizenTube Cobalt itself. The app
+cannot directly crash a connected TV.
+
+**Steps to resolve:**
+
+1. **Disable HDMI-CEC** on both the TV and the Shield:
+   - TV: `Settings → General → External Device Manager → Anynet+ (HDMI-CEC) → Off`
+   - Shield: `Settings → Device Preferences → HDMI → CEC control → Disabled`
+2. **Update TV firmware** — Samsung releases firmware updates that fix HDMI stability
+   issues. `Settings → Support → Software Update → Update Now`.
+3. **Try a different HDMI cable or port** — a marginal cable can trigger CEC errors
+   under high-bandwidth scenarios (4K HDR video).
+4. If the loop persists, report the specific TV model and Shield firmware to the
+   NVIDIA Shield forums — this is a hardware compatibility issue.
+
+---
+
 ## Related Pages
 
 - [FAQ](FAQ.md) — common questions answered concisely

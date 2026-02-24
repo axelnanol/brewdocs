@@ -46,7 +46,12 @@ it available on Android and Google TV devices.
 
 - [Discord Server](https://discord.gg/m2P7v8Y2qR)
 - [Telegram Channel](https://t.me/tizentubecobaltofficial)
-- [Report Issues](https://github.com/reisxd/TizenTube/issues)
+- [Report Issues (TizenTube Cobalt)](https://github.com/reisxd/TizenTubeCobalt/issues)
+
+> **Note:** TizenTube Cobalt has its own separate issue tracker from TizenTube (Samsung Tizen TV).
+> Use [TizenTubeCobalt/issues](https://github.com/reisxd/TizenTubeCobalt/issues) for problems
+> with the Android app, and [TizenTube/issues](https://github.com/reisxd/TizenTube/issues) for
+> the Samsung Tizen mod.
 
 ---
 
