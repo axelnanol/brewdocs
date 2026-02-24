@@ -27,6 +27,7 @@ directly on your Samsung TV to browse the documentation from your couch.
 | [TizenPortal Usage](docs/tizenportal/Usage.md) | Day-to-day usage and remote-control reference |
 | [TizenBrowse](docs/tizenbrowse/README.md) | Ad-free browsing mod for Samsung TVs |
 | [TFlix](docs/tflix/README.md) | Netflix-like mod for Cineby.gd on Samsung TVs |
+| [HyperTizen](docs/hypertizen/README.md) | Hyperion / HyperHDR Ambilight capturer (Tizen 6.5+) |
 
 ### Media & Apps
 
@@ -42,9 +43,14 @@ directly on your Samsung TV to browse the documentation from your couch.
 | [TizenTube Cobalt](docs/tizentubecobalt/README.md) | TizenTube for Android / Google TV |
 | [Tizen Community Packages & Other Projects](docs/other-projects/README.md) | Community bundles, failed projects |
 
----
+### Support
 
-## 🚀 Running as a TizenBrew Module
+| Page | Description |
+| :--- | :---------- |
+| [FAQ](docs/FAQ.md) | Frequently asked questions |
+| [Troubleshooting](docs/Troubleshooting.md) | Step-by-step fixes for common errors |
+
+---
 
 BrewDocs is packaged as a TizenBrew **app** module. Add it to TizenBrew with:
 
@@ -65,6 +71,7 @@ D-pad / remote-control navigation powered by spatial navigation.
 - [TizenPortal](https://github.com/axelnanol/tizenportal)
 - [TizenBrowse](https://github.com/ghostfxck/TizenBrowse)
 - [TFlix](https://github.com/Zyrecx/TFlix)
+- [HyperTizen](https://github.com/reisxd/HyperTizen)
 - [Moonlight for Tizen](https://github.com/OneLiberty/moonlight-chrome-tizen)
 - [Jellyfin for TizenBrew](https://github.com/GlenLowland/jellyfin-tizen-npm-publish)
 - [Tizen Community Packages](https://github.com/PatrickSt1991/tizen-community-packages)

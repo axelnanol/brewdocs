@@ -21,6 +21,7 @@ TizenBrew is the modular platform that makes all of these mods possible.
   - [Usage Guide](tizenportal/Usage.md) — Day-to-day usage and remote-control reference
 - [TizenBrowse](tizenbrowse/README.md) — Ad-free browsing mod for Samsung TVs
 - [TFlix](tflix/README.md) — Netflix-like mod for Cineby.gd on Samsung TVs
+- [HyperTizen](hypertizen/README.md) — Hyperion / HyperHDR Ambilight capturer for Tizen TVs (Tizen 6.5+)
 
 ## Media & Apps
 
@@ -31,4 +32,9 @@ TizenBrew is the modular platform that makes all of these mods possible.
 
 - [TizenTube Cobalt](tizentubecobalt/README.md) — TizenTube for Android / Google TV (not a TizenBrew module)
 - [Tizen Community Packages & Other Projects](other-projects/README.md) — community bundles, failed projects
+
+## Support
+
+- [FAQ](FAQ.md) — Frequently asked questions
+- [Troubleshooting](Troubleshooting.md) — Step-by-step fixes for common errors
 
