@@ -287,7 +287,7 @@
         '<p><strong>TizenPortal</strong> is a universal browser shell for Samsung Smart TVs.',
         'It provides a TV-friendly launcher for any website and automatically injects',
         'compatibility fixes (bundles) for each site you add.</p>',
-        '<p>Author: Alex Nolan &nbsp;|&nbsp; Type: <code>mods</code> &nbsp;|&nbsp;',
+        '<p>Author: Axel Nanol &nbsp;|&nbsp; Type: <code>mods</code> &nbsp;|&nbsp;',
         'Compatibility: Tizen 3.0 – 6.5 &nbsp;|&nbsp;',
         '<a href="https://github.com/axelnanol/tizenportal" class="ext-link">GitHub</a></p>',
         '<h2>Features</h2>',
