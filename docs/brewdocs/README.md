@@ -60,13 +60,18 @@ For general module installation guidance, see
   "appName": "BrewDocs",
   "packageType": "app",
   "appPath": "dist/brewdocs.html",
-  "keys": ["ColorF0Red", "ColorF1Green", "ColorF2Yellow", "ColorF3Blue", "Return"]
+  "keys": ["ColorF0Red", "ColorF1Green", "ColorF2Yellow", "ColorF3Blue"]
 }
 ```
 
 BrewDocs uses `packageType: "app"`, so TizenBrew opens `dist/brewdocs.html` directly in
-the browser. That HTML file contains `<script src="brewdocs.js"></script>`, which loads
+the browser. That HTML file contains `<script src="./brewdocs.js"></script>`, which loads
 the application script — no `serviceFile` or `evaluateScriptOnDocumentStart` is needed.
+
+The `Return`/Back key is not listed in `keys` because Samsung TVs always deliver its
+events without explicit registration. BrewDocs intercepts it to navigate back within
+the wiki, and falls through to the browser's default behaviour (returning to TizenBrew)
+when there are no more pages to step back through.
 
 ---
 
