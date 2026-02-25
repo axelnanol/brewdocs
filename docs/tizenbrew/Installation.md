@@ -105,7 +105,7 @@ Use this method if you prefer a manual approach or need to script the deployment
    tizen install -n path/to/TizenBrewStandalone.wgt
    ```
    > `tizen` is in `C:\tizen-studio\tools\ide\bin` (Windows) or
-   > `~/tizen-studio/tools/ide\bin` (Linux/macOS).
+   > `~/tizen-studio/tools/ide/bin` (Linux/macOS).
 5. Set the **Host PC IP** to `127.0.0.1` (same Developer Mode screen as Step 1).
 6. Launch **TizenBrew** from the TV's app list.
 
