@@ -79,6 +79,24 @@ D-pad / remote-control navigation powered by spatial navigation.
 
 ---
 
+## 🔨 Contributing
+
+The `docs/` directory is the single source of truth for all wiki content.
+**Do not edit `dist/brewdocs.js` by hand** — it is generated automatically.
+
+### Adding or updating a page
+
+1. Edit (or add) a Markdown file under `docs/`.
+2. If adding a new page, register it in `docs/manifest.json` with its `id`, `label`, `section`, and `file` path.
+3. Regenerate the site JavaScript:
+   ```bash
+   npm install  # first time only
+   npm run build
+   ```
+4. Commit both the updated `docs/` files and the regenerated `dist/brewdocs.js`.
+
+---
+
 ## 📜 License
 
 MIT
