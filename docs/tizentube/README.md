@@ -36,7 +36,8 @@ immediately after installing TizenBrew.
 If it is missing, add it manually:
 
 1. Open **TizenBrew** on your TV.
-2. Press **GREEN** to open the Module Manager.
+2. Navigate to the **Module Manager** — the **3rd icon from the left** at the top of
+   the TizenBrew home screen. Use the directional pad to highlight it and press **OK**.
 3. Select **Add Module** and enter either:
    ```
    reisxd/tizentube
@@ -92,5 +93,4 @@ This is a known limitation on Tizen 7+. See [FAQ](../FAQ.md) for the compatibili
 ## Related Pages
 
 - [TizenBrew Module System](../tizenbrew/Modules.md)
-- [TizenPortal Overview](../tizenportal/README.md) — a more advanced mod with a portal
-  launcher for any site
+- [TizenTube Cobalt](../tizentubecobalt/README.md) — TizenTube for Android / Google TV

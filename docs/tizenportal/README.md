@@ -67,4 +67,3 @@ it is on the portal or a target site and behaves accordingly.
 
 - [Usage Guide](Usage.md) — day-to-day usage and colour-button reference
 - [TizenBrew Module System](../tizenbrew/Modules.md)
-- [TizenTube Overview](../tizentube/README.md)

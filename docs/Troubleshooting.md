@@ -1,10 +1,12 @@
 # Troubleshooting
 
 Step-by-step fixes for the most common TizenBrew and TizenTube issues.
+Click on a topic to expand the fix.
 
 ---
 
-## "The application cannot be installed because the validity period has expired" / Error (-6)
+<details open>
+<summary><strong>"The application cannot be installed because the validity period has expired" / Error (-6)</strong></summary>
 
 **Cause:** The **USB Demo Package** installation method is permanently dead. Samsung
 shut down the signing service used to generate USB packages months ago. Any guide
@@ -18,9 +20,10 @@ that mentions USB installation or extracting files to a USB drive is outdated.
 
 > ⚠️ Do **not** attempt the USB method. It cannot work regardless of what you try.
 
----
+</details>
 
-## "Could not connect to the SDB Daemon" / TV not found
+<details>
+<summary><strong>"Could not connect to the SDB Daemon" / TV not found</strong></summary>
 
 **Cause:** Wrong IP address, Developer Mode not enabled, or the TV is not reachable
 on the network.
@@ -46,9 +49,10 @@ on the network.
 
 5. **Firewall** — make sure your PC's firewall does not block port `26101` (SDB).
 
----
+</details>
 
-## TizenBrew / TizenTube Crashes on Launch
+<details>
+<summary><strong>TizenBrew / TizenTube Crashes on Launch</strong></summary>
 
 **Fix:** **Reboot your TV** (long-press the power button, or unplug and replug).
 Most crash-on-open issues are caused by stale state in the TV's browser engine that
@@ -57,9 +61,10 @@ a full reboot clears.
 If the crash persists after reboot, try uninstalling and reinstalling TizenBrew via
 the TizenBrew Installer.
 
----
+</details>
 
-## TizenTube Is Showing Ads
+<details>
+<summary><strong>TizenTube Is Showing Ads</strong></summary>
 
 **Fix:** **Reboot your TV.** The ad-blocker can fall out of sync with YouTube's
 served scripts; a reboot forces a clean reload of the TizenTube module.
@@ -68,9 +73,10 @@ If ads continue after several reboots, check the
 [TizenTube issue tracker](https://github.com/reisxd/TizenTube/issues) — the team
 may have already identified the cause.
 
----
+</details>
 
-## 4K Video Playback Issues (Lag or Crashes)
+<details>
+<summary><strong>4K Video Playback Issues (Lag or Crashes)</strong></summary>
 
 **Cause:** Known limitation of the Tizen browser engine on Tizen 7 and above.
 This is not fixable by TizenTube.
@@ -84,23 +90,26 @@ This is not fixable by TizenTube.
 
 **Workaround:** Use the native YouTube app for 4K HDR content.
 
----
+</details>
 
-## TizenTube Disappeared After Reinstalling TizenBrew
+<details>
+<summary><strong>TizenTube Disappeared After Reinstalling TizenBrew</strong></summary>
 
 Reinstalling TizenBrew does not automatically restore previously installed modules.
 
 **Fix:**
 1. Open TizenBrew on your TV.
-2. Press **GREEN** to open the Module Manager.
+2. Navigate to the **Module Manager** (3rd icon from the left at the top of the
+   TizenBrew home screen).
 3. Add the module again:
    ```
    reisxd/tizentube
    ```
 
----
+</details>
 
-## Certificate Error When Installing a TPK (`-12` / `Check certificate error`)
+<details>
+<summary><strong>Certificate Error When Installing a TPK (`-12` / `Check certificate error`)</strong></summary>
 
 Some Tizen apps (e.g. HyperTizen) are distributed as `.tpk` files that require a
 Samsung certificate matching the registered TV's DUID.
@@ -108,9 +117,10 @@ Samsung certificate matching the registered TV's DUID.
 **Fix:** Resign the package with your own certificate — see
 [Building & Resigning](tizenbrew/Building.md) for instructions.
 
----
+</details>
 
-## TizenBrew Autostart — TV Hangs / Cannot Get Back to Menu
+<details>
+<summary><strong>TizenBrew Autostart — TV Hangs / Cannot Get Back to Menu</strong></summary>
 
 **Symptoms:** TizenBrew launches straight into TizenTube, the TV hangs or stutters,
 and pressing Back doesn't return to the TizenBrew dashboard.
@@ -128,9 +138,10 @@ noticeable after upgrading from 2.x.
 4. If you cannot interrupt the autostart at all, reinstall TizenBrew via the
    TizenBrew Installer — this resets the configuration to defaults.
 
----
+</details>
 
-## TV Rebooting in a Loop While Using TizenTube Cobalt (NVIDIA Shield / Android)
+<details>
+<summary><strong>TV Rebooting in a Loop While Using TizenTube Cobalt (NVIDIA Shield / Android)</strong></summary>
 
 **Symptoms:** TV screen turns blue and enters a reboot loop while using TizenTube
 Cobalt on an attached device (e.g. NVIDIA Shield). Only unplugging the TV stops it.
@@ -150,6 +161,8 @@ cannot directly crash a connected TV.
    under high-bandwidth scenarios (4K HDR video).
 4. If the loop persists, report the specific TV model and Shield firmware to the
    NVIDIA Shield forums — this is a hardware compatibility issue.
+
+</details>
 
 ---
 
