@@ -9,8 +9,7 @@
     "ColorF0Red",
     "ColorF1Green",
     "ColorF2Yellow",
-    "ColorF3Blue",
-    "Return"
+    "ColorF3Blue"
   ],
   "author": "Axel Nanol",
   "license": "MIT",
