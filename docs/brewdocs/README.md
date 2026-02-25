@@ -52,6 +52,24 @@ For general module installation guidance, see
 
 ---
 
+## `package.json` Summary
+
+```json
+{
+  "name": "@axelnanol/brewdocs",
+  "appName": "BrewDocs",
+  "packageType": "app",
+  "appPath": "dist/brewdocs.html",
+  "keys": ["ColorF0Red", "ColorF1Green", "ColorF2Yellow", "ColorF3Blue", "Return"]
+}
+```
+
+BrewDocs uses `packageType: "app"`, so TizenBrew opens `dist/brewdocs.html` directly in
+the browser. That HTML file contains `<script src="brewdocs.js"></script>`, which loads
+the application script — no `serviceFile` or `evaluateScriptOnDocumentStart` is needed.
+
+---
+
 ## Reading BrewDocs in a Browser
 
 The same content is hosted on GitHub Pages and is always up to date:

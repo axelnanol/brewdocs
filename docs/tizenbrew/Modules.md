@@ -36,8 +36,8 @@ browser. The files are served directly from the module package.
 | `appName` | User-facing display name (e.g. `"BrewDocs"`) |
 | `appPath` | Path to the main HTML file (e.g. `"dist/index.html"`) |
 | `keys` | Array of [TVInputDevice](https://developer.samsung.com/smarttv/develop/api-references/tizen-web-device-api-references/tvinputdevice-api.html) key names to register |
-| `serviceFile` | *(optional)* Path to a Node.js service file |
-| `evaluateScriptOnDocumentStart` | *(optional)* Inject the script before the page loads |
+| `serviceFile` | *(optional)* Path to a Node.js background service file |
+| `evaluateScriptOnDocumentStart` | *(optional)* Inject an additional script into the app page before it loads |
 
 **Minimal example:**
 ```json
@@ -67,8 +67,8 @@ TizenBrew navigates to the target URL and evaluates the module's `main` script o
 | `websiteURL` | The URL to navigate to |
 | `main` | JavaScript file to inject into the page |
 | `keys` | Array of TVInputDevice key names to register |
-| `serviceFile` | *(optional)* Path to a Node.js service file |
-| `evaluateScriptOnDocumentStart` | *(optional)* Inject before the page loads |
+| `serviceFile` | *(optional)* Path to a Node.js background service file |
+| `evaluateScriptOnDocumentStart` | *(optional)* Inject the `main` script before the target page finishes loading |
 
 **Minimal example:**
 ```json
