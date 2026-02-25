@@ -1,0 +1,20 @@
+[
+  { "id": "home",              "label": "Home",               "section": "BrewDocs",          "file": "README.md" },
+  { "id": "tb-overview",      "label": "Overview",            "section": "TizenBrew",         "file": "tizenbrew/README.md" },
+  { "id": "tb-install",       "label": "Installation",        "section": "TizenBrew",         "file": "tizenbrew/Installation.md" },
+  { "id": "tb-modules",       "label": "Module System",       "section": "TizenBrew",         "file": "tizenbrew/Modules.md" },
+  { "id": "tb-building",      "label": "Building & Resigning","section": "TizenBrew",         "file": "tizenbrew/Building.md" },
+  { "id": "tt-overview",      "label": "Overview",            "section": "TizenTube",         "file": "tizentube/README.md" },
+  { "id": "ttcobalt-overview","label": "Overview",            "section": "TizenTube Cobalt",  "file": "tizentubecobalt/README.md" },
+  { "id": "tp-overview",      "label": "Overview",            "section": "TizenPortal",       "file": "tizenportal/README.md" },
+  { "id": "tp-usage",         "label": "Usage Guide",         "section": "TizenPortal",       "file": "tizenportal/Usage.md" },
+  { "id": "tbrowse-overview", "label": "TizenBrowse",         "section": "More Mods",         "file": "tizenbrowse/README.md" },
+  { "id": "tflix-overview",   "label": "TFlix",               "section": "More Mods",         "file": "tflix/README.md" },
+  { "id": "ht-overview",      "label": "HyperTizen",          "section": "More Mods",         "file": "hypertizen/README.md" },
+  { "id": "jf-overview",      "label": "Jellyfin",            "section": "Independent Apps",  "file": "jellyfin/README.md" },
+  { "id": "ml-overview",      "label": "Moonlight",           "section": "Independent Apps",  "file": "moonlight/README.md" },
+  { "id": "other-overview",   "label": "Community & Other",   "section": "Independent Apps",  "file": "other-projects/README.md" },
+  { "id": "brewdocs-overview","label": "BrewDocs",            "section": "BrewDocs",          "file": "brewdocs/README.md" },
+  { "id": "faq",              "label": "FAQ",                  "section": "Support",           "file": "FAQ.md" },
+  { "id": "troubleshooting",  "label": "Troubleshooting",     "section": "Support",           "file": "Troubleshooting.md" }
+]
