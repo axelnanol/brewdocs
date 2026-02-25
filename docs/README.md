@@ -1,7 +1,7 @@
-# BrewDocs — Documentation Index
+# BrewDocs — Table of Contents
 
-Welcome to the BrewDocs wiki! Use the table of contents below to find the
-topic you are looking for.
+Use the table of contents below to find the topic you are looking for.
+You can also use the sidebar on the left to jump directly to any page.
 
 ---
 

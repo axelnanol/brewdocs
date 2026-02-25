@@ -1,6 +1,7 @@
 # Frequently Asked Questions
 
 Answers to the most common questions about TizenBrew, TizenTube, and related mods.
+Click on a question to expand the answer.
 
 ---
 
@@ -25,49 +26,67 @@ Answers to the most common questions about TizenBrew, TizenTube, and related mod
 
 ## TizenBrew & Modules
 
-### Where can I find modules other than TizenTube?
+<details open>
+<summary><strong>Where can I find modules other than TizenTube?</strong></summary>
 
-Press the **GREEN** button on your remote while TizenBrew is open to access the
-**Module Manager**. You can add any module from GitHub by entering its repository
-path in `user/repo` format (e.g. `reisxd/tizentube`).
+Navigate to the **Module Manager** — it is the **3rd icon from the left** at the top of
+the TizenBrew home screen. Use the directional pad on your remote to highlight it and
+press **OK/Enter** to open it. You can add any module from GitHub by entering its
+repository path in `user/repo` format (e.g. `reisxd/tizentube`).
 
 Available modules documented in this wiki:
 
-- [TizenTube](tizentube/README.md), [TizenPortal](tizenportal/README.md),
-  [TizenBrowse](tizenbrowse/README.md), [TFlix](tflix/README.md),
-  [HyperTizen](hypertizen/README.md)
+- [TizenTube](tizentube/README.md), [TizenBrowse](tizenbrowse/README.md),
+  [TFlix](tflix/README.md), [HyperTizen](hypertizen/README.md)
 
-### Do I need to manually update TizenTube?
+</details>
+
+<details>
+<summary><strong>Do I need to manually update TizenTube?</strong></summary>
 
 No. Since TizenBrew **v2.0.2**, modules are updated automatically. You do not need
 to re-add or reinstall them.
 
-### How do I update TizenBrew itself?
+</details>
+
+<details>
+<summary><strong>How do I update TizenBrew itself?</strong></summary>
 
 Use the **TizenBrew Installer** desktop app to reinstall the latest version.
 
 > ⚠️ The **USB Demo Package** method is permanently broken. Samsung shut down the
 > signing service months ago. Do not follow guides that mention USB installation.
 
-### How do I reinstall TizenTube (or any module) after uninstalling it?
+</details>
 
-1. Open TizenBrew and press **GREEN** to open the Module Manager.
+<details>
+<summary><strong>How do I reinstall TizenTube (or any module) after uninstalling it?</strong></summary>
+
+1. Open TizenBrew and navigate to the **Module Manager** (3rd icon from the left at the
+   top of the TizenBrew home screen).
 2. Select **Add Module** and enter: `reisxd/tizentube`
 3. The module will download and appear in your dashboard.
 
-### TizenBrew opens but shows a blank screen / no modules
+</details>
+
+<details>
+<summary><strong>TizenBrew opens but shows a blank screen / no modules</strong></summary>
 
 This can happen on a fresh install before any modules are added. TizenTube is
 normally pre-installed, but if the home screen is empty:
 
-1. Press **GREEN** to open the Module Manager.
+1. Navigate to the **Module Manager** (3rd icon from the left at the top of the
+   TizenBrew home screen).
 2. Add `reisxd/tizentube` (or `@foxreis/tizentube`) as a module.
 3. If the screen stays blank after adding a module, **reboot your TV** and relaunch.
 
 If the problem persists, ensure your TV's network connection is working and that
 the **Host PC IP** in Developer Mode settings is set to `127.0.0.1`.
 
-### TizenBrew autostart — how do I get back to the TizenBrew menu?
+</details>
+
+<details>
+<summary><strong>TizenBrew autostart — how do I get back to the TizenBrew menu?</strong></summary>
 
 If TizenTube is set to autostart, TizenBrew launches straight into YouTube without
 showing the dashboard. To get back to the menu:
@@ -83,26 +102,23 @@ If you cannot interrupt the autostart and the TV hangs:
 - As a last resort, reinstall TizenBrew via the TizenBrew Installer — this resets
   the configuration.
 
-### Can TizenTube appear directly on the Tizen home screen like the native YouTube app?
+</details>
+
+<details>
+<summary><strong>Can TizenTube appear directly on the Tizen home screen like the native YouTube app?</strong></summary>
 
 TizenBrew itself appears as an app on the Tizen home screen. TizenTube is a module
 *inside* TizenBrew — it cannot currently be pinned as a standalone icon on the home
 screen. To launch TizenTube, open TizenBrew first and select it from the dashboard.
 
-
-
-Use the **D-pad** to move focus and **OK / Enter** to select.
-
-| Button | Action |
-| :----- | :----- |
-| 🟢 Green | Open Module Manager (add / remove modules) |
-| Other colour buttons | Module-specific |
+</details>
 
 ---
 
 ## TizenTube
 
-### TizenTube is crashing, UI is unresponsive, or I can't log in
+<details>
+<summary><strong>TizenTube is crashing, UI is unresponsive, or I can't log in</strong></summary>
 
 **Check whether YouTube itself is down first.** A worldwide YouTube outage produces
 identical symptoms in TizenTube — crashes, blank screens, login failures, UI not
@@ -113,7 +129,10 @@ or try YouTube on another device.
 
 **If YouTube is up**, reboot your TV and relaunch TizenTube.
 
-### Ads are showing again
+</details>
+
+<details>
+<summary><strong>Ads are showing again</strong></summary>
 
 **Reboot your TV.** The ad-blocker can fall out of sync with YouTube's served
 scripts. A full reboot forces a clean reload. This is the fix for the vast majority
@@ -123,7 +142,10 @@ If ads persist after several reboots — especially if many users report the sam
 issue at the same time — YouTube may have rolled out an update that broke the
 blocker. Check the [TizenTube issue tracker](https://github.com/reisxd/TizenTube/issues).
 
-### TizenTube "turned into" normal YouTube / TizenTube settings are gone
+</details>
+
+<details>
+<summary><strong>TizenTube "turned into" normal YouTube / TizenTube settings are gone</strong></summary>
 
 If TizenTube's UI looks identical to the standard YouTube app and the TizenTube
 settings panel is empty or missing, the injected script has failed to load. This
@@ -132,7 +154,10 @@ usually happens after a YouTube front-end update.
 **Fix:** Reboot your TV. If the issue persists, wait for a TizenTube update — check
 the [releases page](https://github.com/reisxd/TizenTube/releases).
 
-### The long-press menu or context menu options are not working
+</details>
+
+<details>
+<summary><strong>The long-press menu or context menu options are not working</strong></summary>
 
 (e.g. "Add to Queue", "Go to Channel", "Don't recommend this channel")
 
@@ -140,13 +165,19 @@ This happens after YouTube rolls out a front-end change that affects TizenTube's
 script. **Reboot your TV** first. If it persists after reboot, check the
 [TizenTube issue tracker](https://github.com/reisxd/TizenTube/issues).
 
-### Playback speed is stuck at 1.25×
+</details>
+
+<details>
+<summary><strong>Playback speed is stuck at 1.25×</strong></summary>
 
 Usually caused by a YouTube front-end change breaking TizenTube's speed control.
 **Reboot your TV.** If it persists, report it on the
 [TizenTube issue tracker](https://github.com/reisxd/TizenTube/issues).
 
-### "Something went wrong" when signing in to YouTube
+</details>
+
+<details>
+<summary><strong>"Something went wrong" when signing in to YouTube</strong></summary>
 
 Google periodically changes its sign-in / verification flow, which can break login
 in TizenTube. This requires a TizenTube patch. Check the
@@ -155,7 +186,10 @@ in TizenTube. This requires a TizenTube patch. Check the
 In the meantime, try signing in on a different YouTube TV device and see if the
 session carries over.
 
-### My phone gets a sign-in notification every time I open TizenTube
+</details>
+
+<details>
+<summary><strong>My phone gets a sign-in notification every time I open TizenTube</strong></summary>
 
 When TizenTube signs in to your Google account, Google sends a verification prompt
 to other devices on your account. To stop this:
@@ -167,7 +201,10 @@ to other devices on your account. To stop this:
 Alternatively, use a separate YouTube account in TizenTube to avoid the notification
 on your primary account.
 
-### YouTube Shorts are enabled in settings but still not working
+</details>
+
+<details>
+<summary><strong>YouTube Shorts are enabled in settings but still not working</strong></summary>
 
 If you have enabled Shorts in TizenTube's settings but they still do not play or
 appear, try:
@@ -177,7 +214,10 @@ appear, try:
 3. If it still does not work, report it on the
    [TizenTube issue tracker](https://github.com/reisxd/TizenTube/issues).
 
-### Does TizenTube support viewing without a Google account?
+</details>
+
+<details>
+<summary><strong>Does TizenTube support viewing without a Google account?</strong></summary>
 
 **Yes — as of a recent TizenTube update**, you can now watch YouTube without signing
 in to a Google account. Update TizenTube to the latest version via TizenBrew's Module
@@ -187,41 +227,59 @@ If you are still being forced to sign in, make sure TizenTube has updated to the
 latest release (TizenBrew updates modules automatically since v2.0.2, but a manual
 relaunch may be needed to pick up the change).
 
-### Can I use casting (YouTube Cast) with TizenTube?
+</details>
+
+<details>
+<summary><strong>Can I use casting (YouTube Cast) with TizenTube?</strong></summary>
 
 Casting from a phone to TizenTube requires TizenTube to already be **open and active
 on the TV**. You cannot cast to launch TizenTube from cold — open TizenBrew →
 TizenTube first, then cast from your phone.
 
-### Context menu options are missing after an update
+</details>
+
+<details>
+<summary><strong>Context menu options are missing after an update</strong></summary>
 
 ("Don't recommend this channel", "Go to Channel", etc.)
 
 These options are part of YouTube's TV interface and change with YouTube updates.
 Check the [TizenTube issue tracker](https://github.com/reisxd/TizenTube/issues).
 
-### Buffering — videos play for 1 second then stop
+</details>
+
+<details>
+<summary><strong>Buffering — videos play for 1 second then stop</strong></summary>
 
 **Reboot your device.** Most transient buffering issues (especially ones that
 recur every time the app is relaunched but clear after a reboot) are caused by stale
 network state. If buffering continues after reboot, check your Wi-Fi signal strength
 or try a wired connection.
 
-### Can I use voice / mic search in TizenTube?
+</details>
+
+<details>
+<summary><strong>Can I use voice / mic search in TizenTube?</strong></summary>
 
 Voice search in TizenTube depends on the TV remote's hardware microphone and the
 OS-level voice input. TizenTube does not add voice search to remotes that do not
 already support it. If your Samsung TV remote has a mic button, it may work via the
 native voice input.
 
-### Can I watch 4K on my FHD (1080p) TV?
+</details>
+
+<details>
+<summary><strong>Can I watch 4K on my FHD (1080p) TV?</strong></summary>
 
 Your TV display is fixed at 1080p — it cannot output 4K pixels. You can still select
 a higher-quality stream in the YouTube quality menu (the TV will downscale it to
 1080p). If 4K does not appear as a quality option, YouTube is limiting it based on
 detected screen resolution — this is not a TizenTube limitation.
 
-### How do I disable YouTube Shorts in TizenTube?
+</details>
+
+<details>
+<summary><strong>How do I disable YouTube Shorts in TizenTube?</strong></summary>
 
 TizenTube includes a built-in **hide Shorts** option:
 
@@ -229,7 +287,10 @@ TizenTube includes a built-in **hide Shorts** option:
 2. Toggle **Hide Shorts** on.
 3. Restart TizenTube for the change to take full effect.
 
-### 4K videos lag or crash — is this fixable?
+</details>
+
+<details>
+<summary><strong>4K videos lag or crash — is this fixable?</strong></summary>
 
 This is a **known Tizen 7+ limitation** that cannot be fixed by TizenTube.
 
@@ -241,15 +302,21 @@ This is a **known Tizen 7+ limitation** that cannot be fixed by TizenTube.
 
 Use the native YouTube app for 4K HDR content.
 
-### TizenBrew / TizenTube keeps crashing on open
+</details>
+
+<details>
+<summary><strong>TizenBrew / TizenTube keeps crashing on open</strong></summary>
 
 **Reboot your TV.** Most crash-on-open issues are caused by stale browser state.
+
+</details>
 
 ---
 
 ## Compatibility
 
-### Does TizenBrew work on my 2016 Samsung TV?
+<details>
+<summary><strong>Does TizenBrew work on my 2016 Samsung TV?</strong></summary>
 
 No. TizenBrew requires **Tizen OS 3.0 or newer**, which corresponds to **2017 model
 year Samsung TVs and later**. 2016 models (such as the KU6079) run Tizen 2.x and
@@ -264,7 +331,10 @@ Options for 2016 TVs:
 - Use a network-level ad-blocker (e.g. Pi-hole or NextDNS) to reduce ads on the
   built-in YouTube app.
 
-### My TV is a 2024 model but seems to be running Tizen 2.x — is that right?
+</details>
+
+<details>
+<summary><strong>My TV is a 2024 model but seems to be running Tizen 2.x — is that right?</strong></summary>
 
 Almost certainly not. Most 2024 Samsung Smart TVs run Tizen 7.x or 8.x. A few
 possible explanations:
@@ -277,7 +347,10 @@ possible explanations:
 If the Tizen OS version shown is genuinely 2.x on a 2017+ TV, contact Samsung
 support — this would be unusual.
 
-### My new Samsung remote has no number buttons — how do I enter `12345` for Developer Mode?
+</details>
+
+<details>
+<summary><strong>My new Samsung remote has no number buttons — how do I enter `12345` for Developer Mode?</strong></summary>
 
 Newer Samsung One Remote / Slim remotes omit number buttons. Alternatives:
 
@@ -287,7 +360,10 @@ Newer Samsung One Remote / Slim remotes omit number buttons. Alternatives:
 3. **On-screen number pad** — in some regions, navigating to the `Apps` panel and
    pressing and holding the **Back** button may bring up an on-screen keyboard.
 
-### Does TizenBrew / TizenTube work on LG (webOS) TVs?
+</details>
+
+<details>
+<summary><strong>Does TizenBrew / TizenTube work on LG (webOS) TVs?</strong></summary>
 
 No. TizenBrew and TizenTube are **Samsung Tizen OS** specific. LG TVs run **webOS**,
 which is an entirely different operating system. TizenTube's APK / WGT files cannot
@@ -295,13 +371,19 @@ be installed on LG TVs.
 
 There is no direct equivalent of TizenBrew for webOS at this time.
 
-### Is there a TizenTube for NVIDIA Shield / Firestick / Onn / Google TV?
+</details>
+
+<details>
+<summary><strong>Is there a TizenTube for NVIDIA Shield / Firestick / Onn / Google TV?</strong></summary>
 
 Yes — but it is a different app called **[TizenTube Cobalt](tizentubecobalt/README.md)**.
 It is a standalone Android app, not a TizenBrew module. Download it from the
 [GitHub releases page](https://github.com/reisxd/TizenTubeCobalt/releases/latest).
 
-### Which APK should I download for TizenTube Cobalt on Android — `cobalt-arm.apk` or `cobalt-arm64.apk`?
+</details>
+
+<details>
+<summary><strong>Which APK should I download for TizenTube Cobalt on Android — `cobalt-arm.apk` or `cobalt-arm64.apk`?</strong></summary>
 
 - **`cobalt-arm64.apk`** — for most modern Android TV devices (Fire TV Stick 4K,
   NVIDIA Shield, Onn 4K, Chromecast with Google TV, etc.). These use 64-bit ARM CPUs.
@@ -310,24 +392,28 @@ It is a standalone Android app, not a TizenBrew module. Download it from the
 
 Your device's CPU architecture is shown in `Settings → Device → About → CPU`.
 
-
+</details>
 
 ---
 
 ## Installation
 
-### Is there a way to install TizenBrew without a PC?
+<details>
+<summary><strong>Is there a way to install TizenBrew without a PC?</strong></summary>
 
 Not directly, but the TizenBrew Installer desktop app makes it as simple as possible.
 See [Installation](tizenbrew/Installation.md).
 
 The USB Demo Package method is **permanently unavailable**.
 
+</details>
+
 ---
 
 ## Scope & Support
 
-### My issue looks like a TizenTube bug. Is it?
+<details>
+<summary><strong>My issue looks like a TizenTube bug. Is it?</strong></summary>
 
 Before reporting, check:
 
@@ -337,31 +423,43 @@ Before reporting, check:
    - On a **Samsung Tizen TV** → report at [reisxd/TizenTube/issues](https://github.com/reisxd/TizenTube/issues)
    - On **Android / Fire TV / NVIDIA Shield / Google TV** → report at [reisxd/TizenTubeCobalt/issues](https://github.com/reisxd/TizenTubeCobalt/issues)
 
-### Can TizenBrew run [some unrelated app]?
+</details>
+
+<details>
+<summary><strong>Can TizenBrew run [some unrelated app]?</strong></summary>
 
 TizenBrew is designed for **web-based apps and site modifications** on Tizen TVs.
 Apps that require native capabilities, store access, or a non-Tizen OS are out of scope.
 
-### Is auto frame rate matching supported?
+</details>
+
+<details>
+<summary><strong>Is auto frame rate matching supported?</strong></summary>
 
 Auto frame rate matching (switching the TV's refresh rate to match video content)
 is not currently a TizenTube feature. It is a hardware-level capability that depends
 on the TV's display pipeline and OS-level integration. It can be requested on the
 [TizenTube issue tracker](https://github.com/reisxd/TizenTube/issues).
 
-### Can I get Google Home screen recommendations from TizenTube Cobalt?
+</details>
+
+<details>
+<summary><strong>Can I get Google Home screen recommendations from TizenTube Cobalt?</strong></summary>
 
 TizenTube Cobalt does not currently integrate with the Android TV / Google TV home
 screen recommendations row. This is an Android TV system feature that requires
 specific integration by the app. It can be requested on the
 [TizenTube Cobalt issue tracker](https://github.com/reisxd/TizenTubeCobalt/issues).
 
+</details>
 
-
-### Where can I get live support?
+<details>
+<summary><strong>Where can I get live support?</strong></summary>
 
 The TizenBrew community maintains a Discord server linked from the
 [TizenBrew GitHub page](https://github.com/reisxd/TizenBrew).
+
+</details>
 
 ---
 

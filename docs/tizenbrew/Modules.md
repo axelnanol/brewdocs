@@ -11,10 +11,13 @@ TizenBrew uses a **modular system** — each mod is a normal npm package hosted 
 
 From the TizenBrew launcher on your TV:
 
-1. Select **Add Module**.
-2. Enter the GitHub repository in `user/repo` format (e.g. `reisxd/tizentube`).
-3. TizenBrew fetches the latest release tag, reads `package.json`, and registers the module.
-4. The module now appears in your TizenBrew dashboard.
+1. Navigate to the **Module Manager** — it is the **3rd icon from the left** at the
+   top of the TizenBrew home screen. Use the directional pad on your remote to
+   highlight it and press **OK/Enter** to open it.
+2. Select **Add Module**.
+3. Enter the GitHub repository in `user/repo` format (e.g. `reisxd/tizentube`).
+4. TizenBrew fetches the latest release tag, reads `package.json`, and registers the module.
+5. The module now appears in your TizenBrew dashboard.
 
 ---
 
@@ -87,7 +90,6 @@ TizenBrew navigates to the target URL and evaluates the module's `main` script o
 | Module | Type | Repository |
 | :----- | :--- | :--------- |
 | TizenTube | `mods` | [reisxd/TizenTube](https://github.com/reisxd/TizenTube) |
-| TizenPortal | `mods` | [axelnanol/tizenportal](https://github.com/axelnanol/tizenportal) |
 | Jellyfin-Tizen | `app` | [GlenLowland/jellyfin-tizen-npm-publish](https://github.com/GlenLowland/jellyfin-tizen-npm-publish) |
 | BrewDocs | `mods` | [axelnanol/brewdocs](https://github.com/axelnanol/brewdocs) |
 
@@ -110,4 +112,3 @@ The following key names can be placed in the `keys` array:
 
 - [Building & Resigning](Building.md)
 - [TizenTube Overview](../tizentube/README.md)
-- [TizenPortal Overview](../tizenportal/README.md)

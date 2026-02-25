@@ -1,5 +1,6 @@
 [
-  { "id": "home",              "label": "Home",               "section": "BrewDocs",          "file": "README.md" },
+  { "id": "brewdocs-overview","label": "Welcome",             "section": "BrewDocs",          "file": "brewdocs/README.md" },
+  { "id": "home",             "label": "Table of Contents",   "section": "BrewDocs",          "file": "README.md" },
   { "id": "tb-overview",      "label": "Overview",            "section": "TizenBrew",         "file": "tizenbrew/README.md" },
   { "id": "tb-install",       "label": "Installation",        "section": "TizenBrew",         "file": "tizenbrew/Installation.md" },
   { "id": "tb-modules",       "label": "Module System",       "section": "TizenBrew",         "file": "tizenbrew/Modules.md" },
@@ -14,7 +15,6 @@
   { "id": "jf-overview",      "label": "Jellyfin",            "section": "Independent Apps",  "file": "jellyfin/README.md" },
   { "id": "ml-overview",      "label": "Moonlight",           "section": "Independent Apps",  "file": "moonlight/README.md" },
   { "id": "other-overview",   "label": "Community & Other",   "section": "Independent Apps",  "file": "other-projects/README.md" },
-  { "id": "brewdocs-overview","label": "BrewDocs",            "section": "BrewDocs",          "file": "brewdocs/README.md" },
   { "id": "faq",              "label": "FAQ",                  "section": "Support",           "file": "FAQ.md" },
   { "id": "troubleshooting",  "label": "Troubleshooting",     "section": "Support",           "file": "Troubleshooting.md" }
 ]
