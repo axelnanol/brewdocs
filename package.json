@@ -3,7 +3,6 @@
   "appName": "BrewDocs",
   "version": "0005",
   "description": "A comprehensive wiki for all things TizenBrew related",
-  "type": "module",
   "packageType": "app",
   "appPath": "dist/brewdocs.html",
   "keys": [
