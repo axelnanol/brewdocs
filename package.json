@@ -19,5 +19,8 @@
   "repository": {
     "type": "git",
     "url": "https://axelnanol.github.io/brewdocs"
+  },
+  "devDependencies": {
+    "marked": "^17.0.3"
   }
 }
