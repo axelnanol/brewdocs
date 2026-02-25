@@ -6,7 +6,7 @@ a new mod, or trying to fix a problem, you will find everything you need here.
 
 > **Source:** <https://github.com/axelnanol/brewdocs>  
 > **Author:** Axel Nanol  
-> **Module type:** `mods`
+> **Module type:** `app`
 
 ---
 
