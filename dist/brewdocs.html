@@ -270,10 +270,113 @@
     }
 
     #bd-hints span { white-space: nowrap; }
+
+    /* ── Mobile menu button (hidden on TV / desktop) ─────────── */
+    #bd-menu-btn {
+      display: none;
+      background: none;
+      border: 2px solid var(--border);
+      border-radius: 4px;
+      color: var(--text);
+      cursor: pointer;
+      padding: 4px 10px;
+      font-size: 22px;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    /* Overlay backdrop (inert until mobile sidebar opens) */
+    #bd-overlay { display: none; }
+
+    /* Mobile-only topbar hint (hidden on TV / desktop) */
+    .topbar-mobile { display: none; }
+
+    /* ── Mobile layout (≤ 768 px) ───────────────────────────── */
+    @media (max-width: 768px) {
+      html, body {
+        font-size: 16px;
+      }
+
+      /* Sidebar becomes a fixed off-screen drawer */
+      #bd-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 80vw;
+        max-width: 300px;
+        z-index: 300;
+        transform: translateX(-100%);
+        transition: transform 0.25s ease;
+        overflow-y: auto;
+      }
+
+      #bd-sidebar.mobile-open {
+        transform: translateX(0);
+      }
+
+      /* Semi-transparent backdrop behind the open drawer */
+      #bd-overlay {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 200;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.25s ease;
+      }
+
+      #bd-overlay.mobile-open {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      /* Content wrap fills the full width (sidebar no longer in flow) */
+      #bd-content-wrap {
+        width: 100%;
+      }
+
+      /* Topbar: flex row with hamburger button */
+      #bd-topbar {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 16px;
+        font-size: 15px;
+      }
+
+      /* Show hamburger, hide TV hint, show mobile hint */
+      #bd-menu-btn      { display: block; }
+      .topbar-tv        { display: none; }
+      .topbar-mobile    { display: inline; }
+
+      /* Hide D-pad / colour-button hints — not relevant on mobile */
+      #bd-hints { display: none; }
+
+      /* Tighter content padding on small screens */
+      #bd-content { padding: 24px 16px 40px; }
+
+      /* Scale down typography for mobile reading distance */
+      #bd-logo                { font-size: 22px; }
+      #bd-logo span           { font-size: 14px; }
+      .nav-section-title      { font-size: 14px; }
+      .nav-link               { font-size: 16px; padding: 10px 16px 10px 20px; }
+      #bd-content h1          { font-size: 28px; }
+      #bd-content h2          { font-size: 22px; }
+      #bd-content h3          { font-size: 18px; }
+      #bd-content code        { font-size: 14px; }
+      #bd-content pre code    { font-size: 13px; }
+      #bd-content table       { font-size: 14px; }
+      kbd                     { font-size: 14px; }
+    }
   </style>
 </head>
 <body>
   <div id="bd-shell">
+    <!-- Overlay backdrop for mobile sidebar -->
+    <div id="bd-overlay" aria-hidden="true"></div>
+
     <!-- Sidebar -->
     <aside id="bd-sidebar">
       <div id="bd-logo">
@@ -286,7 +389,9 @@
     <!-- Content -->
     <div id="bd-content-wrap">
       <div id="bd-topbar">
-        Use the D-pad to navigate · <kbd>Enter</kbd> to select
+        <button id="bd-menu-btn" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+        <span class="topbar-tv">Use the D-pad to navigate · <kbd>Enter</kbd> to select</span>
+        <span class="topbar-mobile">Tap ☰ to browse pages</span>
       </div>
       <main id="bd-content" tabindex="-1" role="main">
         <!-- Filled by brewdocs.js -->
