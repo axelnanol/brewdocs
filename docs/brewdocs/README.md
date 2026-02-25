@@ -6,7 +6,7 @@ a new mod, or trying to fix a problem, you will find everything you need here.
 
 > **Source:** <https://github.com/axelnanol/brewdocs>  
 > **Author:** Axel Nanol  
-> **Module type:** `mods`
+> **Module type:** `app`
 
 ---
 
@@ -49,6 +49,24 @@ Use the colour buttons and directional pad on your remote to navigate between pa
 
 For general module installation guidance, see
 [TizenBrew Module System](../tizenbrew/Modules.md).
+
+---
+
+## `package.json` Summary
+
+```json
+{
+  "name": "@axelnanol/brewdocs",
+  "appName": "BrewDocs",
+  "packageType": "app",
+  "appPath": "dist/brewdocs.html",
+  "keys": ["ColorF0Red", "ColorF1Green", "ColorF2Yellow", "ColorF3Blue", "Return"]
+}
+```
+
+BrewDocs uses `packageType: "app"`, so TizenBrew opens `dist/brewdocs.html` directly in
+the browser. That HTML file contains `<script src="brewdocs.js"></script>`, which loads
+the application script — no `serviceFile` or `evaluateScriptOnDocumentStart` is needed.
 
 ---
 
