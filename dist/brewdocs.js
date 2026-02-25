@@ -967,6 +967,13 @@
       if (!link) return;
       e.preventDefault();
       showPage(link.getAttribute('data-page'));
+      // Close the mobile drawer (no-op on TV/desktop where classes are never set)
+      var sidebar = document.getElementById('bd-sidebar');
+      var overlay = document.getElementById('bd-overlay');
+      var btn     = document.getElementById('bd-menu-btn');
+      if (sidebar) sidebar.classList.remove('mobile-open');
+      if (overlay) overlay.classList.remove('mobile-open');
+      if (btn)     btn.setAttribute('aria-expanded', 'false');
     });
 
     nav.addEventListener('keydown', function (e) {
@@ -1056,13 +1063,50 @@
   }
 
   // ─────────────────────────────────────────────────────────────
-  // 5. BOOTSTRAP
+  // 5. MOBILE MENU
+  // Hamburger button toggles the sidebar drawer on small screens.
+  // On TV / desktop the button is hidden (display:none via CSS) so
+  // this code is harmless — the classList mutations are simply no-ops.
+  // ─────────────────────────────────────────────────────────────
+  function initMobileMenu() {
+    var btn     = document.getElementById('bd-menu-btn');
+    var sidebar = document.getElementById('bd-sidebar');
+    var overlay = document.getElementById('bd-overlay');
+    if (!btn || !sidebar || !overlay) return;
+
+    function openMenu() {
+      sidebar.classList.add('mobile-open');
+      overlay.classList.add('mobile-open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+
+    function closeMenu() {
+      sidebar.classList.remove('mobile-open');
+      overlay.classList.remove('mobile-open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+
+    btn.addEventListener('click', function () {
+      if (sidebar.classList.contains('mobile-open')) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    // Tapping the backdrop closes the drawer
+    overlay.addEventListener('click', closeMenu);
+  }
+
+  // ─────────────────────────────────────────────────────────────
+  // 6. BOOTSTRAP
   // ─────────────────────────────────────────────────────────────
   function init() {
     buildSidebar();
     showPage('home');
     SpatialNav.init();
     bindRemoteKeys();
+    initMobileMenu();
   }
 
   if (document.readyState === 'loading') {
