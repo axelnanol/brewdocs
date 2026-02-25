@@ -383,6 +383,11 @@
     }
     currentPageId = id;
 
+    // Reflect the current page in the URL hash (enables deep-linking / bookmarks)
+    if (window.location.hash !== '#' + id) {
+      history.replaceState(null, '', '#' + id);
+    }
+
     // Update active state in sidebar
     var links = document.querySelectorAll('.nav-link');
     for (var j = 0; j < links.length; j++) {
@@ -488,7 +493,32 @@
   // ─────────────────────────────────────────────────────────────
   function init() {
     buildSidebar();
-    showPage('brewdocs-overview');
+
+    // Navigate to the page indicated by the URL hash, or fall back to the overview
+    var initialId = window.location.hash.slice(1) || 'brewdocs-overview';
+    showPage(initialId);
+
+    // Keep the view in sync if the URL hash is changed externally
+    window.addEventListener('hashchange', function () {
+      var id = window.location.hash.slice(1);
+      if (id && id !== currentPageId) {
+        showPage(id, false);
+      }
+    });
+
+    // Delegate clicks on internal links rendered inside the content area
+    var contentEl = document.getElementById('bd-content');
+    if (contentEl) {
+      contentEl.addEventListener('click', function (e) {
+        var a = e.target.closest ? e.target.closest('a.int-link') : null;
+        if (!a) return;
+        e.preventDefault();
+        // href is "#page-id"; strip the leading "#"
+        var pageId = (a.getAttribute('href') || '').replace(/^#/, '');
+        if (pageId) showPage(pageId);
+      });
+    }
+
     SpatialNav.init();
     bindRemoteKeys();
     initMobileMenu();
