@@ -4,10 +4,9 @@
 ad-free, sponsor-free streaming to a wider range of devices — including those that cannot
 run TizenBrew.
 
-> **Source:** <https://github.com/reisxd/TizenTubeCobalt>  
-> **Author:** Reis Can  
-> **Platform:** Android / Google TV (not a TizenBrew module)  
-> **AFTVNews code:** `6366500`
+| Source | Author | Platform | AFTVNews code |
+| :----- | :----- | :------- | :------------ |
+| [reisxd/TizenTubeCobalt](https://github.com/reisxd/TizenTubeCobalt) | [Reis Can](https://github.com/reisxd) | Android / Google TV (not a TizenBrew module) | `6366500` |
 
 ---
 

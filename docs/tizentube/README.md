@@ -3,10 +3,9 @@
 **TizenTube** is the original and most widely used TizenBrew mod. It gives you an
 ad-free, sponsor-free YouTube experience on Samsung Smart TVs running Tizen OS.
 
-> **Source:** <https://github.com/reisxd/TizenTube>  
-> **Author:** Reis Can  
-> **Module type:** `mods` (site modification)  
-> **Target site:** <https://youtube.com/tv>
+| Source | Author | Module type | Target site |
+| :----- | :----- | :---------- | :---------- |
+| [reisxd/TizenTube](https://github.com/reisxd/TizenTube) | [Reis Can](https://github.com/reisxd) | `mods` (site modification) | [youtube.com/tv](https://youtube.com/tv) |
 
 ---
 

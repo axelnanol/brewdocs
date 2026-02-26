@@ -4,9 +4,9 @@
 mode — instead of paid Samsung Art Store content, it displays artworks sourced
 from free public museum APIs.
 
-> **Source:** <https://github.com/dchwilk/ArtGalleryTB>  
-> **Author:** dchwilk  
-> **Module type:** `app`
+| Source | Author | Module type |
+| :----- | :----- | :---------- |
+| [dchwilk/ArtGalleryTB](https://github.com/dchwilk/ArtGalleryTB) | [dchwilk](https://github.com/dchwilk) | `app` |
 
 ---
 

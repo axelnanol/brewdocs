@@ -31,6 +31,7 @@ directly on your Samsung TV to browse the documentation from your couch.
 | [TwitchTB](docs/twitchtb/README.md) | Ad-free Twitch mod with 7TV emotes for Samsung TVs |
 | [PrimeVideoTB](docs/primevideotb/README.md) | Ad-blocking and enhanced Amazon Prime Video for Samsung TVs |
 | [ArtGalleryTB](docs/artgallerytb/README.md) | Multi-museum art slideshow for Samsung TVs |
+| [BrewBridge](docs/brewbridge/README.md) | Real-time JSON data-transfer bridge for TizenBrew |
 
 ### Media & Apps
 
@@ -81,6 +82,7 @@ D-pad / remote-control navigation powered by spatial navigation.
 - [TizenBrew Installer](https://github.com/reisxd/TizenBrewInstaller)
 - [PrimeVideoTB](https://github.com/dchwilk/PrimeVideoTB)
 - [ArtGalleryTB](https://github.com/dchwilk/ArtGalleryTB)
+- [BrewBridge](https://github.com/axelnanol/brewbridge)
 
 ---
 

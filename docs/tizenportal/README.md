@@ -4,10 +4,9 @@
 It provides a TV-friendly launcher for any website and automatically injects
 compatibility fixes (bundles) for each site you add.
 
-> **Source:** <https://github.com/axelnanol/tizenportal>  
-> **Author:** Axel Nanol  
-> **Module type:** `mods` (site modification with integrated portal launcher)  
-> **Compatibility:** Tizen 3.0 – 6.5 (Chrome 47 – 69)
+| Source | Author | Module type | Compatibility |
+| :----- | :----- | :---------- | :------------ |
+| [axelnanol/tizenportal](https://github.com/axelnanol/tizenportal) | [Axel Nanol](https://github.com/axelnanol) | `mods` (site modification with integrated portal launcher) | Tizen 3.0 – 6.5 (Chrome 47 – 69) |
 
 ---
 

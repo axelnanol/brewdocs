@@ -3,10 +3,9 @@
 **TizenBrowse** is a TizenBrew mod that turns Google Chrome / the Tizen browser into an
 ad-free browsing experience on Samsung Smart TVs.
 
-> **Source:** <https://github.com/ghostfxck/TizenBrowse>  
-> **Author:** ghostfxck  
-> **Module type:** `mods` (site modification)  
-> **Target site:** <https://google.com/>
+| Source | Author | Module type | Target site |
+| :----- | :----- | :---------- | :---------- |
+| [ghostfxck/TizenBrowse](https://github.com/ghostfxck/TizenBrowse) | [ghostfxck](https://github.com/ghostfxck) | `mods` (site modification) | [google.com](https://google.com/) |
 
 ---
 
