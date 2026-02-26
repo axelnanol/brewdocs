@@ -13,6 +13,8 @@
   { "id": "tflix-overview",   "label": "TFlix",               "section": "More Mods",         "file": "tflix/README.md" },
   { "id": "ht-overview",      "label": "HyperTizen",          "section": "More Mods",         "file": "hypertizen/README.md" },
   { "id": "twitchtb-overview","label": "TwitchTB",            "section": "More Mods",         "file": "twitchtb/README.md" },
+  { "id": "pvtb-overview",    "label": "PrimeVideoTB",        "section": "More Mods",         "file": "primevideotb/README.md" },
+  { "id": "agtb-overview",    "label": "ArtGalleryTB",        "section": "More Mods",         "file": "artgallerytb/README.md" },
   { "id": "jf-overview",      "label": "Jellyfin",            "section": "Independent Apps",  "file": "jellyfin/README.md" },
   { "id": "ml-overview",      "label": "Moonlight",           "section": "Independent Apps",  "file": "moonlight/README.md" },
   { "id": "other-overview",   "label": "Community & Other",   "section": "Independent Apps",  "file": "other-projects/README.md" },

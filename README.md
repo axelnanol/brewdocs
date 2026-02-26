@@ -28,6 +28,9 @@ directly on your Samsung TV to browse the documentation from your couch.
 | [TizenBrowse](docs/tizenbrowse/README.md) | Ad-free browsing mod for Samsung TVs |
 | [TFlix](docs/tflix/README.md) | Netflix-like mod for Cineby.gd on Samsung TVs |
 | [HyperTizen](docs/hypertizen/README.md) | Hyperion / HyperHDR Ambilight capturer (Tizen 6.5+) |
+| [TwitchTB](docs/twitchtb/README.md) | Ad-free Twitch mod with 7TV emotes for Samsung TVs |
+| [PrimeVideoTB](docs/primevideotb/README.md) | Ad-blocking and enhanced Amazon Prime Video for Samsung TVs |
+| [ArtGalleryTB](docs/artgallerytb/README.md) | Multi-museum art slideshow for Samsung TVs |
 
 ### Media & Apps
 
@@ -76,6 +79,8 @@ D-pad / remote-control navigation powered by spatial navigation.
 - [Jellyfin for TizenBrew](https://github.com/GlenLowland/jellyfin-tizen-npm-publish)
 - [Tizen Community Packages](https://github.com/PatrickSt1991/tizen-community-packages)
 - [TizenBrew Installer](https://github.com/reisxd/TizenBrewInstaller)
+- [PrimeVideoTB](https://github.com/dchwilk/PrimeVideoTB)
+- [ArtGalleryTB](https://github.com/dchwilk/ArtGalleryTB)
 
 ---
 

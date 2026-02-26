@@ -37,7 +37,9 @@ repository path in `user/repo` format (e.g. `reisxd/tizentube`).
 Available modules documented in this wiki:
 
 - [TizenTube](tizentube/README.md), [TizenBrowse](tizenbrowse/README.md),
-  [TFlix](tflix/README.md), [HyperTizen](hypertizen/README.md)
+  [TFlix](tflix/README.md), [HyperTizen](hypertizen/README.md),
+  [TwitchTB](twitchtb/README.md), [PrimeVideoTB](primevideotb/README.md),
+  [ArtGalleryTB](artgallerytb/README.md)
 
 </details>
 
