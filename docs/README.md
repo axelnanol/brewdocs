@@ -25,6 +25,7 @@ TizenBrew is the modular platform that makes all of these mods possible.
 - [TwitchTB](twitchtb/README.md) — Ad-free Twitch mod with 7TV emotes for Samsung TVs
 - [PrimeVideoTB](primevideotb/README.md) — Ad-blocking and enhanced Amazon Prime Video for Samsung TVs
 - [ArtGalleryTB](artgallerytb/README.md) — Multi-museum art slideshow for Samsung TVs
+- [BrewBridge](brewbridge/README.md) — Real-time JSON data-transfer bridge for TizenBrew
 
 ## Media & Apps
 

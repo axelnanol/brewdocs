@@ -4,10 +4,9 @@
 experience to Samsung Smart TVs, including ad-blocking, auto-skip features, and
 playback speed control.
 
-> **Source:** <https://github.com/dchwilk/PrimeVideoTB>  
-> **Author:** dchwilk  
-> **Module type:** `mods` (site modification)  
-> **Target site:** <https://www.primevideo.com>
+| Source | Author | Module type | Target site |
+| :----- | :----- | :---------- | :---------- |
+| [dchwilk/PrimeVideoTB](https://github.com/dchwilk/PrimeVideoTB) | [dchwilk](https://github.com/dchwilk) | `mods` | [primevideo.com](https://www.primevideo.com) |
 
 ---
 

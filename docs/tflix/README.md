@@ -3,10 +3,9 @@
 **TFlix** is a TizenBrew mod that transforms [Cineby.gd](https://www.cineby.gd/) into a
 Netflix-like, TV-remote-friendly streaming experience on Samsung Smart TVs.
 
-> **Source:** <https://github.com/Zyrecx/TFlix>  
-> **Author:** Zyrecx  
-> **Module type:** `mods` (site modification)  
-> **Target site:** <https://www.cineby.gd/>
+| Source | Author | Module type | Target site |
+| :----- | :----- | :---------- | :---------- |
+| [Zyrecx/TFlix](https://github.com/Zyrecx/TFlix) | [Zyrecx](https://github.com/Zyrecx) | `mods` | [cineby.gd](https://www.cineby.gd/) |
 
 ---
 

@@ -180,6 +180,14 @@
       text-decoration: underline;
     }
 
+    #bd-content a.ext-link::after {
+      content: '\202F↗';
+      font-size: 0.75em;
+      vertical-align: super;
+      text-decoration: none;
+      display: inline-block;
+    }
+
     #bd-content a.ext-link:focus,
     #bd-content a.ext-link:hover {
       color: #fff;
@@ -295,6 +303,7 @@
     @media (max-width: 768px) {
       html, body {
         font-size: 16px;
+        overflow: auto;
       }
 
       /* Sidebar becomes a fixed off-screen drawer */
@@ -313,6 +322,7 @@
 
       #bd-sidebar.mobile-open {
         transform: translateX(0);
+        box-shadow: 2px 0 16px rgba(0, 0, 0, 0.6), 2px 0 4px rgba(88, 166, 255, 0.12);
       }
 
       /* Semi-transparent backdrop behind the open drawer */

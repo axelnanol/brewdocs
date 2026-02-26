@@ -1,7 +1,7 @@
 {
   "name": "@axelnanol/brewdocs",
   "appName": "BrewDocs",
-  "version": "0007",
+  "version": "0008",
   "description": "A comprehensive wiki for all things TizenBrew related",
   "packageType": "app",
   "appPath": "dist/brewdocs.html",

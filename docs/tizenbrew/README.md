@@ -5,7 +5,9 @@ Once installed, it lets you add powerful mods — such as an ad-free version of 
 directly on your TV. You only need a PC to install TizenBrew once; after that, adding
 and updating mods is done from the TV itself with just a remote control.
 
-> **Source:** <https://github.com/reisxd/TizenBrew>
+| Source | Author |
+| :----- | :----- |
+| [reisxd/TizenBrew](https://github.com/reisxd/TizenBrew) | [Reis Can](https://github.com/reisxd) |
 
 ---
 

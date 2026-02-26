@@ -5,10 +5,9 @@
 running Tizen OS. It enables Ambilight-style ambient lighting driven by what is
 actually on your TV screen.
 
-> **Source:** <https://github.com/reisxd/HyperTizen>  
-> **Author:** Reis Can  
-> **Module type:** `app` (TizenBrew UI module) + native TPK (Tizen app)  
-> **Minimum Tizen version:** 6.5 (2022 Samsung TVs or newer)
+| Source | Author | Module type | Min. Tizen version |
+| :----- | :----- | :---------- | :----------------- |
+| [reisxd/HyperTizen](https://github.com/reisxd/HyperTizen) | [Reis Can](https://github.com/reisxd) | `app` + native TPK | 6.5 (2022+) |
 
 ---
 
