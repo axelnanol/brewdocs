@@ -23,6 +23,8 @@ TizenBrew is the modular platform that makes all of these mods possible.
 - [TFlix](tflix/README.md) — Netflix-like mod for Cineby.gd on Samsung TVs
 - [HyperTizen](hypertizen/README.md) — Hyperion / HyperHDR Ambilight capturer for Tizen TVs (Tizen 6.5+)
 - [TwitchTB](twitchtb/README.md) — Ad-free Twitch mod with 7TV emotes for Samsung TVs
+- [PrimeVideoTB](primevideotb/README.md) — Ad-blocking and enhanced Amazon Prime Video for Samsung TVs
+- [ArtGalleryTB](artgallerytb/README.md) — Multi-museum art slideshow for Samsung TVs
 
 ## Media & Apps
 
