@@ -6,7 +6,7 @@ compatibility fixes (bundles) for each site you add.
 
 | Source | Author | Module type | Compatibility |
 | :----- | :----- | :---------- | :------------ |
-| [axelnanol/tizenportal](https://github.com/axelnanol/tizenportal) | [Axel Nanol](https://github.com/axelnanol) | `mods` | Tizen 3.0 – 6.5 (Chrome 47 – 69) |
+| [axelnanol/tizenportal](https://github.com/axelnanol/tizenportal) | [Axel Nanol](https://github.com/axelnanol) | `mods` (site modification with integrated portal launcher) | Tizen 3.0 – 6.5 (Chrome 47 – 69) |
 
 ---
 

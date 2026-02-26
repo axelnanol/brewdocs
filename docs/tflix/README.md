@@ -5,7 +5,7 @@ Netflix-like, TV-remote-friendly streaming experience on Samsung Smart TVs.
 
 | Source | Author | Module type | Target site |
 | :----- | :----- | :---------- | :---------- |
-| [Zyrecx/TFlix](https://github.com/Zyrecx/TFlix) | [Zyrecx](https://github.com/Zyrecx) | `mods` | [cineby.gd](https://www.cineby.gd/) |
+| [Zyrecx/TFlix](https://github.com/Zyrecx/TFlix) | [Zyrecx](https://github.com/Zyrecx) | `mods` (site modification) | [cineby.gd](https://www.cineby.gd/) |
 
 ---
 

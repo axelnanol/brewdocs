@@ -5,7 +5,7 @@ ad-free, sponsor-free YouTube experience on Samsung Smart TVs running Tizen OS.
 
 | Source | Author | Module type | Target site |
 | :----- | :----- | :---------- | :---------- |
-| [reisxd/TizenTube](https://github.com/reisxd/TizenTube) | [Reis Can](https://github.com/reisxd) | `mods` | [youtube.com/tv](https://youtube.com/tv) |
+| [reisxd/TizenTube](https://github.com/reisxd/TizenTube) | [Reis Can](https://github.com/reisxd) | `mods` (site modification) | [youtube.com/tv](https://youtube.com/tv) |
 
 ---
 

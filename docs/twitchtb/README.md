@@ -6,7 +6,7 @@ and 7TV emote support.
 
 | Source | Author | Module type | Target site |
 | :----- | :----- | :---------- | :---------- |
-| [owen-the-kid/TwitchTB](https://github.com/owen-the-kid/TwitchTB) | [Owen The Kid](https://github.com/owen-the-kid) | `mods` | [hisense.tv.twitch.tv](https://hisense.tv.twitch.tv/) |
+| [owen-the-kid/TwitchTB](https://github.com/owen-the-kid/TwitchTB) | [Owen The Kid](https://github.com/owen-the-kid) | `mods` (site modification) | [hisense.tv.twitch.tv](https://hisense.tv.twitch.tv/) |
 
 ---
 

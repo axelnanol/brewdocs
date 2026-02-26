@@ -6,7 +6,7 @@ run TizenBrew.
 
 | Source | Author | Platform | AFTVNews code |
 | :----- | :----- | :------- | :------------ |
-| [reisxd/TizenTubeCobalt](https://github.com/reisxd/TizenTubeCobalt) | [Reis Can](https://github.com/reisxd) | Android / Google TV | `6366500` |
+| [reisxd/TizenTubeCobalt](https://github.com/reisxd/TizenTubeCobalt) | [Reis Can](https://github.com/reisxd) | Android / Google TV (not a TizenBrew module) | `6366500` |
 
 ---
 

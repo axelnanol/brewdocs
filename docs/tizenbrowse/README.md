@@ -5,7 +5,7 @@ ad-free browsing experience on Samsung Smart TVs.
 
 | Source | Author | Module type | Target site |
 | :----- | :----- | :---------- | :---------- |
-| [ghostfxck/TizenBrowse](https://github.com/ghostfxck/TizenBrowse) | [ghostfxck](https://github.com/ghostfxck) | `mods` | [google.com](https://google.com/) |
+| [ghostfxck/TizenBrowse](https://github.com/ghostfxck/TizenBrowse) | [ghostfxck](https://github.com/ghostfxck) | `mods` (site modification) | [google.com](https://google.com/) |
 
 ---
 

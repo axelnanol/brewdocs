@@ -6,7 +6,7 @@ playback speed control.
 
 | Source | Author | Module type | Target site |
 | :----- | :----- | :---------- | :---------- |
-| [dchwilk/PrimeVideoTB](https://github.com/dchwilk/PrimeVideoTB) | [dchwilk](https://github.com/dchwilk) | `mods` | [primevideo.com](https://www.primevideo.com) |
+| [dchwilk/PrimeVideoTB](https://github.com/dchwilk/PrimeVideoTB) | [dchwilk](https://github.com/dchwilk) | `mods` (site modification) | [primevideo.com](https://www.primevideo.com) |
 
 ---
 

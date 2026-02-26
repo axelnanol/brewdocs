@@ -7,7 +7,7 @@ actually on your TV screen.
 
 | Source | Author | Module type | Min. Tizen version |
 | :----- | :----- | :---------- | :----------------- |
-| [reisxd/HyperTizen](https://github.com/reisxd/HyperTizen) | [Reis Can](https://github.com/reisxd) | `app` + native TPK | 6.5 (2022+) |
+| [reisxd/HyperTizen](https://github.com/reisxd/HyperTizen) | [Reis Can](https://github.com/reisxd) | `app` (TizenBrew UI module) + native TPK (Tizen app) | 6.5 (2022 Samsung TVs or newer) |
 
 ---
 
