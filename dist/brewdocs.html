@@ -175,6 +175,19 @@
       margin-bottom: 8px;
     }
 
+    #bd-content a.int-link {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    #bd-content a.int-link:focus,
+    #bd-content a.int-link:hover {
+      color: #fff;
+      outline: 3px solid var(--focus-clr);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
     #bd-content a.ext-link {
       color: var(--accent);
       text-decoration: underline;
@@ -409,6 +422,7 @@
       <div id="bd-hints">
         <span>⬆⬇ — scroll sidebar</span>
         <span>⬅➡ — switch panel</span>
+        <span>Chan ▲▼ — page up / down</span>
         <span>🔵 Blue — back to top</span>
       </div>
     </div>
