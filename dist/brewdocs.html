@@ -370,7 +370,9 @@
       }
 
       /* Show hamburger, hide TV hint, show mobile hint */
-      #bd-menu-btn      { display: block; }
+      /* position:relative + z-index keeps the button above the overlay (z-index:200)
+         so it can always be tapped to toggle the drawer open or closed */
+      #bd-menu-btn      { display: block; position: relative; z-index: 400; }
       .topbar-tv        { display: none; }
       .topbar-mobile    { display: inline; }
 
