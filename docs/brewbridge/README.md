@@ -83,7 +83,7 @@ messages every 2 seconds.
   "description": "TizenBrew data bridge for sending and viewing structured messages between devices",
   "packageType": "app",
   "appPath": "web/dist/index.html",
-  "keys": ["ColorF0Red", "ColorF1Green", "ColorF2Yellow", "ColorF3Blue"]
+  "keys": ["ColorF0Red", "ColorF1Green", "ColorF2Yellow", "ColorF3Blue", "ChannelUp", "ChannelDown"]
 }
 ```
 
