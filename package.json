@@ -1,7 +1,7 @@
 {
   "name": "@axelnanol/brewdocs",
   "appName": "BrewDocs",
-  "version": "0008",
+  "version": "0009",
   "description": "A comprehensive wiki for all things TizenBrew related",
   "packageType": "app",
   "appPath": "dist/brewdocs.html",
@@ -9,7 +9,9 @@
     "ColorF0Red",
     "ColorF1Green",
     "ColorF2Yellow",
-    "ColorF3Blue"
+    "ColorF3Blue",
+    "ChannelUp",
+    "ChannelDown"
   ],
   "author": "Axel Nanol",
   "license": "MIT",

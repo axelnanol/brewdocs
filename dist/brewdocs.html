@@ -175,6 +175,19 @@
       margin-bottom: 8px;
     }
 
+    #bd-content a.int-link {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    #bd-content a.int-link:focus,
+    #bd-content a.int-link:hover {
+      color: #fff;
+      outline: 3px solid var(--focus-clr);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
     #bd-content a.ext-link {
       color: var(--accent);
       text-decoration: underline;
@@ -357,7 +370,9 @@
       }
 
       /* Show hamburger, hide TV hint, show mobile hint */
-      #bd-menu-btn      { display: block; }
+      /* position:relative + z-index keeps the button above the overlay (z-index:200)
+         so it can always be tapped to toggle the drawer open or closed */
+      #bd-menu-btn      { display: block; position: relative; z-index: 400; }
       .topbar-tv        { display: none; }
       .topbar-mobile    { display: inline; }
 
@@ -409,6 +424,8 @@
       <div id="bd-hints">
         <span>⬆⬇ — scroll sidebar</span>
         <span>⬅➡ — switch panel</span>
+        <span>Chan ▲▼ — page up / down</span>
+        <span>🔴 Prev · 🟡 Home · 🟢 Next</span>
         <span>🔵 Blue — back to top</span>
       </div>
     </div>

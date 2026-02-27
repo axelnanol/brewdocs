@@ -48,6 +48,22 @@ For general module installation guidance, see
 
 ---
 
+## Remote Controls
+
+| Button | Action |
+| :----- | :----- |
+| ⬆⬇ D-pad | Scroll sidebar / navigate content |
+| ⬅➡ D-pad | Switch between sidebar and content panels |
+| Chan ▲ | Page up in content |
+| Chan ▼ | Page down in content |
+| 🔴 Red | Previous page |
+| 🟢 Green | Next page |
+| 🟡 Yellow | Home / overview page |
+| 🔵 Blue | Scroll content back to top |
+| ⏎ Back | Go back in history / exit to TizenBrew |
+
+---
+
 ## Reading BrewDocs in a Browser
 
 The same content is hosted on GitHub Pages and is always up to date:

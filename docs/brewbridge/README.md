@@ -23,7 +23,8 @@ messages every 2 seconds.
 - **JSON & human-readable views** — toggle between raw JSON and a formatted human-readable
   layout using the 🟡 Yellow button.
 - **Download** — save the latest received payload as a `.json` file.
-- **TV remote support** — D-pad navigation and colour-button shortcuts work on Samsung TVs.
+- **TV remote support** — D-pad navigation, colour-button page cycling, and Channel Up/Down
+  page scrolling all work on Samsung TVs.
 
 ---
 
@@ -31,10 +32,12 @@ messages every 2 seconds.
 
 | Button | Action |
 | :----- | :----- |
+| 🔴 Red | Navigate to previous page |
+| 🟢 Green | Navigate to next page |
 | 🟡 Yellow | Toggle JSON / human-readable view (Viewer) or Text / JSON input mode (Sender) |
 | 🔵 Blue | Scroll content back to top |
-| 🔴 Red | Reserved for future use |
-| 🟢 Green | Reserved for future use |
+| Chan ▲ | Page up in content |
+| Chan ▼ | Page down in content |
 
 ---
 
@@ -57,7 +60,8 @@ messages every 2 seconds.
 
 1. Click **Create New Session** — the Worker generates a session ID, write key, and
    read key.
-2. A viewer URL and QR code are displayed. Share the URL or QR with the receiver.
+2. A viewer URL and QR code are displayed in a sticky panel on the right. Share the
+   URL or QR with the receiver.
 3. Paste any JSON into the text area and click **Send JSON**, or use
    **Send Test Message** to try a pre-built payload.
 
@@ -76,9 +80,10 @@ messages every 2 seconds.
 {
   "name": "@axelnanol/brewbridge",
   "appName": "BrewBridge",
+  "description": "TizenBrew data bridge for sending and viewing structured messages between devices",
   "packageType": "app",
   "appPath": "web/dist/index.html",
-  "keys": ["ColorF0Red", "ColorF1Green", "ColorF2Yellow", "ColorF3Blue"]
+  "keys": ["ColorF0Red", "ColorF1Green", "ColorF2Yellow", "ColorF3Blue", "ChannelUp", "ChannelDown"]
 }
 ```
 
