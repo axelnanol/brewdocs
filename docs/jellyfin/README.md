@@ -30,7 +30,47 @@ adapter layer so it works correctly when loaded through TizenBrew.
 
 ---
 
-## Method 2 — Samsung-Jellyfin-Installer
+## Method 2 — jellyfin-tizen-builds (TizenBrew Installer)
+
+Pre-built Jellyfin `.wgt` files automatically compiled from the latest
+[jellyfin-tizen](https://github.com/jellyfin/jellyfin-tizen) source. Multiple variants
+are available for different use-cases, and new builds are produced automatically as
+Jellyfin releases new versions.
+
+> **Source:** <https://github.com/jeppevinkel/jellyfin-tizen-builds>  
+> **Author:** jeppevinkel
+
+### Variants
+
+| File | Description |
+| :--- | :---------- |
+| `Jellyfin.wgt` | Latest stable release |
+| `10.11.z` | Latest build on the 10.11.x release branch (bleeding edge) |
+| `master` | Cutting-edge build (potentially unstable) |
+| `secondary` | Different app ID — allows a second account to be signed in |
+| `SmartHub` | Adds Samsung Smart Hub Preview integration |
+| `OblongIcon` | Uses an oblong icon (required on some older TVs) |
+
+### Installation
+
+Use the same TizenBrew Installer desktop app that installs TizenBrew itself.
+
+1. Enable **Developer Mode** on your TV (see [TizenBrew Installation](../tizenbrew/Installation.md)).
+2. Download and run the [TizenBrew Installer](https://github.com/reisxd/TizenBrewInstaller/releases/latest) on your PC.
+3. Enter your TV's IP address.
+4. In the GitHub repository field enter:
+   ```
+   jeppevinkel/jellyfin-tizen-builds
+   ```
+5. Click **Install**.
+
+> **Alternatively:** Download a `.wgt` file directly from the
+> [releases page](https://github.com/jeppevinkel/jellyfin-tizen-builds/releases/latest)
+> and supply it as a local file to the TizenBrew Installer.
+
+---
+
+## Method 3 — Samsung-Jellyfin-Installer
 
 A dedicated desktop installer for deploying Jellyfin (and other apps such as
 [Moonlight](../moonlight/README.md)) directly to your Samsung TV.
@@ -54,7 +94,7 @@ A dedicated desktop installer for deploying Jellyfin (and other apps such as
 
 ---
 
-## Method 3 — Docker-Based Installer
+## Method 4 — Docker-Based Installer
 
 For users comfortable with Docker and automation.
 
@@ -72,6 +112,7 @@ docker run --rm ghcr.io/georift/install-jellyfin-tizen <TV_IP> [build option] [t
 | Method | Needs PC? | Needs Developer Mode? | Ease of Use |
 | :----- | :-------- | :-------------------- | :---------- |
 | TizenBrew module | ❌ | ❌ | ⭐⭐⭐⭐ |
+| jellyfin-tizen-builds (TizenBrew Installer) | ✅ | ✅ | ⭐⭐⭐⭐ |
 | Samsung-Jellyfin-Installer | ✅ | ✅ | ⭐⭐⭐⭐ |
 | Docker installer | ✅ | ✅ | ⭐⭐⭐ |
 
