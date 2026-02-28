@@ -181,6 +181,7 @@
       'a[href]',
       'button:not([disabled])',
       'input:not([disabled])',
+      'details > summary',
       '[tabindex]:not([tabindex="-1"])',
       '.focusable',
     ].join(', ');
