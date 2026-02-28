@@ -5,10 +5,10 @@ on Samsung Smart TVs in several ways — pick the one that best fits your situat
 
 | Method | Best if… |
 | :----- | :------- |
-| [Method 1 — TizenBrew Module](#method-1--tizenbrew-module-recommended) | You already have TizenBrew installed and want the simplest option |
-| [Method 2 — jellyfin-tizen-builds](#method-2--jellyfin-tizen-builds-tizenbrew-installer) | You want the latest pre-built app installed directly on your TV (no TizenBrew needed) |
-| [Method 3 — Samsung-Jellyfin-Installer](#method-3--samsung-jellyfin-installer) | You want a GUI tool that also installs Moonlight and other community apps |
-| [Method 4 — Docker](#method-4--docker-based-installer) | You are comfortable with the command line and want full control |
+| Method 1 — TizenBrew Module | You already have TizenBrew installed and want the simplest option |
+| Method 2 — jellyfin-tizen-builds | You want the latest pre-built app installed directly on your TV (no TizenBrew needed) |
+| Method 3 — Samsung-Jellyfin-Installer | You want a GUI tool that also installs Moonlight and other community apps |
+| Method 4 — Docker | You are comfortable with the command line and want full control |
 
 ---
 
@@ -83,8 +83,11 @@ Jellyfin releases a new version.
    and run it on your PC.
    - **Windows:** double-click the `.exe`. If Windows Defender warns you, click
      **More info → Run anyway** — this is a well-known open-source tool.
-   - **macOS / Linux:** mark it as executable first (`chmod +x tizenbrew-installer-*`)
-     and then run it.
+   - **macOS / Linux:** mark the installer as executable and then run it:
+     ```bash
+     chmod +x tizenbrew-installer<os><arch>
+     ./tizenbrew-installer<os><arch>
+     ```
 3. Enter your **TV's IP address** in the installer.
 4. In the **GitHub repository** field enter:
    ```
