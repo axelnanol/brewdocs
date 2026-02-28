@@ -78,6 +78,7 @@ D-pad / remote-control navigation powered by spatial navigation.
 - [HyperTizen](https://github.com/reisxd/HyperTizen)
 - [Moonlight for Tizen](https://github.com/OneLiberty/moonlight-chrome-tizen)
 - [Jellyfin for TizenBrew](https://github.com/GlenLowland/jellyfin-tizen-npm-publish)
+- [Jellyfin Tizen Builds](https://github.com/jeppevinkel/jellyfin-tizen-builds)
 - [Tizen Community Packages](https://github.com/PatrickSt1991/tizen-community-packages)
 - [TizenBrew Installer](https://github.com/reisxd/TizenBrewInstaller)
 - [PrimeVideoTB](https://github.com/dchwilk/PrimeVideoTB)
