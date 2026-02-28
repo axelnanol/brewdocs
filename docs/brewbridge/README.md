@@ -8,9 +8,9 @@ A **Sender** creates an ephemeral session and sends JSON messages over a Cloudfl
 Worker API. A **Viewer** scans the QR code (or follows the link) and polls for new
 messages every 2 seconds.
 
-| Source | Author | Module type |
-| :----- | :----- | :---------- |
-| [axelnanol/brewbridge](https://github.com/axelnanol/brewbridge) | [Axel Nanol](https://github.com/axelnanol) | `app` |
+| Source | Author | Module type | Target site |
+| :----- | :----- | :---------- | :---------- |
+| [axelnanol/brewbridge](https://github.com/axelnanol/brewbridge) | [Axel Nanol](https://github.com/axelnanol) | `mods` (site modification) | [axelnanol.github.io/brewbridge](https://axelnanol.github.io/brewbridge/index.html) |
 
 ---
 
@@ -81,8 +81,9 @@ messages every 2 seconds.
   "name": "@axelnanol/brewbridge",
   "appName": "BrewBridge",
   "description": "TizenBrew data bridge for sending and viewing structured messages between devices",
-  "packageType": "app",
-  "appPath": "web/dist/index.html",
+  "packageType": "mods",
+  "websiteURL": "https://axelnanol.github.io/brewbridge/index.html",
+  "main": "main.js",
   "keys": ["ColorF0Red", "ColorF1Green", "ColorF2Yellow", "ColorF3Blue", "ChannelUp", "ChannelDown"]
 }
 ```
