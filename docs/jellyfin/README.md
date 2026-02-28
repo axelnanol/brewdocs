@@ -7,7 +7,7 @@ on Samsung Smart TVs in several ways — pick the one that best fits your situat
 | :----- | :------- |
 | Method 1 — TizenBrew Module | You already have TizenBrew installed and want the simplest option |
 | Method 2 — jellyfin-tizen-builds | You want the latest pre-built app installed directly on your TV (no TizenBrew needed) |
-| Method 3 — Samsung-Jellyfin-Installer | You want a GUI tool that also installs Moonlight and other community apps |
+| Method 3 — Samsung-Jellyfin-Installer | You want a GUI tool that also installs Moonfin and other community apps |
 | Method 4 — Docker | You are comfortable with the command line and want full control |
 
 ---
@@ -111,7 +111,7 @@ to open TizenBrew to launch it.
 ## Method 3 — Samsung-Jellyfin-Installer
 
 A dedicated desktop GUI installer for deploying Jellyfin (and other community apps such
-as [Moonlight](../moonlight/README.md)) directly to your Samsung TV.
+as [Moonfin](https://github.com/Moonfin-Client)) directly to your Samsung TV.
 
 > **Source:** <https://github.com/Jellyfin2Samsung/Samsung-Jellyfin-Installer>
 
@@ -120,7 +120,7 @@ as [Moonlight](../moonlight/README.md)) directly to your Samsung TV.
 | App | Description |
 | :-- | :---------- |
 | Jellyfin | Official Jellyfin client for Tizen |
-| Moonlight | NVIDIA GameStream / Sunshine client (see [Moonlight](../moonlight/README.md)) |
+| Moonfin | Moonlight-like streaming client (see [Moonfin](https://github.com/Moonfin-Client)) |
 | Other community apps | Available under **Release → Tizen Community** |
 
 ### Steps
@@ -169,4 +169,3 @@ Replace `<TV_IP>` with your TV's local IP address (found at
 
 - [TizenBrew Installation](../tizenbrew/Installation.md)
 - [TizenBrew Module System](../tizenbrew/Modules.md)
-- [Moonlight on Tizen](../moonlight/README.md)
